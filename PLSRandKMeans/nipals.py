@@ -66,9 +66,6 @@ def divide(X,Y,split):
     for i in range(size,n):
         testX[i-size] = X[mix[i]]
         testY[i-size] = Y[mix[i]]
-            
-
-            
     return [array(trainX),array(trainY),array(testX),array(testY)]
 
 def nipals(X,Y,a, tol=10 ** -10):
@@ -127,39 +124,43 @@ def nipals(X,Y,a, tol=10 ** -10):
       return P,Q,W,B
 
 
-def readDataMats():
-    f = file("grades",'r')
-    l = f.readline()[:-1].split('\t')
-    Y = []
-    data = [float(p) for p in l]
-    Y.append(data)
-    Y = array(Y).T
+def readCDTFile(filename):
+    '''
+        read a cdt file as output by genomics portals
+        assums genelists are the same, but not neccessarily
+        the same order
+    '''
+    f = file(filename,'r')
+    gene = []
+    expression = []
+    raw = f.readline()[:-1].split("\t")
+    
+    #first 4 idx are labels
+    samples =[k for k in raw[4:]]
+    #eweight garbage
+    raw = f.readline()
+    
+    #first gene expression sample
+    raw = f.readline()[:-1].split("\t")
 
-    f = file("data",'r')
-    l = f.readline()[:-1].split('\t')
-    X = []
-    while len(l)>1:
-        data = [float(p) for p in l]
-        X.append(data)
-        l =  f.readline()[:-1].split('\t')
-    X = array(X).T
+    while len(raw)>1:
+        gene.append(raw[1]+raw[2])
+        expression.append([float(k) for k in raw[4:]])
+        #centroids.append([float(k) for k in raw[-2:]])
+        raw = f.readline()[:-1].split("\t")
+        
+    #sort expressions by gene name so lists are aligned
+    gene,expression = zip(*sorted(zip(gene,expression)))
+        
+    return samples,gene,expression
 
 
+Y,genelist,X = readCDTFile("train.cdt")
+#need to transpose for kmeans
+Y = array([[float(y[0]) for y in Y]]).T
+X = array(X).T
 
-    genelist = []
-    f = file("genes",'r')
-    l = f.readline()[:-1].split('\t')
-    while len(l)>1:
-        l =  f.readline()[:-1]
-        genelist.append(l)
-    return X,Y,genelist
-
-
-
-
-
-X,Y,genelist = readDataMats()
-[trainX,trainY,testX,testY]=divide(X,Y,.50)
+[trainX,trainY,testX,testY]=divide(X,Y,.999)
 
 
 #standard usage
@@ -167,8 +168,10 @@ X,Y,genelist = readDataMats()
 #test = X
 #Ypred = dot(dot(dot(test,W),B),Q.T)
 
-P,Q,W,B = nipals(trainX,trainY,15,10**-32)
+P,Q,W,B = nipals(trainX,trainY,50,10**-32)
 
+
+[trainX,trainY,testX,testY]=divide(X,Y,.001)
 Ypred = dot(dot(dot(testX,W),B),Q.T)
 
 
