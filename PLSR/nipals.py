@@ -155,7 +155,7 @@ def readCDTFile(filename):
     return samples,gene,expression
 
 
-Y,genelist,X = readCDTFile("train.cdt")
+Y,genelist,X = readCDTFile("../train.cdt")
 #need to transpose for kmeans
 Y = array([[float(y[0]) for y in Y]]).T
 X = array(X).T

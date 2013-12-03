@@ -60,7 +60,7 @@ def readCDTFile(filename):
 '''
 
 #read training set data    
-samples,gene,expression = readCDTFile("train.cdt")
+samples,gene,expression = readCDTFile("../train.cdt")
 
 #compute class centroids
 from pylab import array
@@ -81,7 +81,7 @@ for e in xrange(len(expression)):
 centroids = [expression1,expression3]
 
 #read test set data
-samples,gene,expression = readCDTFile("test.cdt")
+samples,gene,expression = readCDTFile("../test.cdt")
 #use centroids to classify
 classes,vals = classifier(array(centroids),array(expression).T)
 for i in range(len(classes)):

@@ -169,7 +169,7 @@ def findlabels(Y,tildaY,k,labels):
 from numpy import array
 
 #read data
-Y,genelist,X = readCDTFile("train.cdt")
+Y,genelist,X = readCDTFile("../train.cdt")
 
 #need to transpose for kmeans
 Y = array([int(y[0])-1 for y in Y]).T
