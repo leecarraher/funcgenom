@@ -165,8 +165,6 @@ def findlabels(Y,tildaY,k,labels):
         ret[i] = argmx
     return ret
             
-            
-
 
 from numpy import array
 
@@ -181,7 +179,7 @@ X = array(X).T
 
 dim = len(trainX[0])
 
-labels = 3 # number of labels, comes from dataset
+labels = 2 # number of labels, comes from dataset
 k = labels*2 # k parameter for k-means
 means,dif = kmeans(trainX,k,dim)
 

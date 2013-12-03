@@ -13,6 +13,4 @@ test.cdt - grade 1 and 3 tumors and 49 top differentially expressed gene
 expression per sample
 test.cdt - grade 2 tumors and 49 top differentially expressed genes from grade 1 and 3
 tumors, expression per sample
-grade1and3 differentially expressed - heatmap of grade 1 and 3 samples and expression levels
-grade2 on upregulated3 - heatmap of grade 2 samples and expression levels
 
