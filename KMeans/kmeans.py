@@ -24,76 +24,86 @@ def divide(X,Y,split):
         testX[i-size] = X[mix[i]]
         testY[i-size] = Y[mix[i]]
     return [array(trainX),array(trainY),array(testX),array(testY)]
-
-
-'''
-    Euclidean for now
-'''
+    
 def dist(X,Y):
+    '''
+        Euclidean for now
+    '''
     d = 0.0
     if len(X)!=len(Y):
         print "error incompatible dimensions"
     for i in xrange(len(X)):
-        d=d+(X[i]-Y[i])*(X[i]-Y[i])
-    return d**.5
+        d=d+abs(X[i]-Y[i])
+    return d
     
 def least(q,D,fnc=dist):
     l = fnc(q,D[0])
     lp = 0
+
     for i in xrange(1,len(D)):
-        if fnc(q,D[i])<l:
+        tmp=fnc(q,D[i])
+        if tmp<l:
             lp = i
-            l=fnc(q,D[i])
+            l = tmp
     return lp
     
 
-'''
-    assign to clusters
-'''
-def assignClusters(A,means):
-    clusters = [[] for i in xrange(len(means))]
-    for i in xrange(len(A)):
-        clusters[least(A[i],means)].append(A[i])
-    return clusters
 
-'''
-    update means
-'''
-def kmeansUpdate(clusters,means,dim):
+def assignClusters(A,means,clusters):
+    '''
+        assign to clusters
+    '''
+    swaps = 0
+    newclusters = [[] for i in xrange(k)]
     for i in xrange(len(clusters)):
-        means[i]=[0.0 for k in xrange(dim)]
         for j in xrange(len(clusters[i])):
-            l = len(clusters[i][j])
-            for k in xrange(l):
-                #print means[i]
-                means[i][k] = means[i][k]+clusters[i][j][k]
-            for k in xrange(l):
-                means[i][k]= means[i][k] / float(l)
+            arglst = least(A[clusters[i][j]],means)
+            newclusters[arglst].append(clusters[i][j])
+            swaps += int(arglst != i)
+             
+    return newclusters,swaps
+
+
+def kmeansUpdate(A,clusters,dim):
+    '''
+        update means
+    '''
+    means = []
+    for cluster in clusters:
+        mean=[0.0 for k in xrange(dim)]
+        l = len(cluster)
+        for point in cluster:
+            for d in xrange(dim):
+                mean[d] = mean[d]+(A[point][d] / float(l))
+        
+
+        means.append(mean)
+        
     return means
 
-def kmeans(A,k,dim,eps = .000001):
+def kmeans(A,k,dim,maxiters = 1000):
+    #some data storage structures
     R = range(len(A))
     shuffle(R)
-    means = [A[r] for r in R[:k]]
-    print means
-    prev = deepcopy(means)
-    clusters = assignClusters(A,means)
-    means = kmeansUpdate(clusters,means,dim)
-    dif = sum(map(dist,prev, means))
-    print "error = ",dif
-    while dif>eps:
-        prev = deepcopy(means)
-        clusters = assignClusters(A,means)
-        means = kmeansUpdate(clusters,means,dim)
-        dif = sum(map(dist,prev, means))
-        print "error = ",dif
-    return means, dif
+
+    clusters = []
+    part = len(R)/k
+    for i in xrange(k):
+        clusters.append( R[i*part:(i+1)*(part)])
+        
+
+    means = kmeansUpdate(A,clusters,dim)
+    clusters,swaps = assignClusters(A,means,clusters)
+
+    while swaps>2 and maxiters>0:
+        maxiters-=1
+        means = kmeansUpdate(A,clusters,dim)
+        clusters,swaps = assignClusters(A,means,clusters)
+        print "swaps = ",swaps
+    return means,swaps
     
-
-
-
-
-
+    
+    
 def readCDTFile(filename):
     '''
         read a cdt file as output by genomics portals
