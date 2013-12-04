@@ -23,17 +23,15 @@ def divide(X,Y,split):
     for i in range(size,n):
         testX[i-size] = X[mix[i]]
         testY[i-size] = Y[mix[i]]
-    return [array(trainX),array(trainY),array(testX),array(testY)]
+    return [trainX,trainY,testX,testY]
     
 def dist(X,Y):
     '''
         Euclidean for now
     '''
     d = 0.0
-    if len(X)!=len(Y):
-        print "error incompatible dimensions"
     for i in xrange(len(X)):
-        d=d+abs(X[i]-Y[i])
+        d=d+(X[i]-Y[i])*(X[i]-Y[i])
     return d
     
 def least(q,D,fnc=dist):
@@ -54,13 +52,12 @@ def assignClusters(A,means,clusters):
         assign to clusters
     '''
     swaps = 0
-    newclusters = [[] for i in xrange(k)]
+    newclusters = [list() for i in xrange(k)]
     for i in xrange(len(clusters)):
         for j in xrange(len(clusters[i])):
             arglst = least(A[clusters[i][j]],means)
             newclusters[arglst].append(clusters[i][j])
             swaps += int(arglst != i)
-             
     return newclusters,swaps
 
 
@@ -68,39 +65,32 @@ def kmeansUpdate(A,clusters,dim):
     '''
         update means
     '''
-    means = []
+    means  = []
     for cluster in clusters:
         mean=[0.0 for k in xrange(dim)]
         l = len(cluster)
         for point in cluster:
             for d in xrange(dim):
                 mean[d] = mean[d]+(A[point][d] / float(l))
-        
-
         means.append(mean)
-        
     return means
 
 def kmeans(A,k,dim,maxiters = 1000):
     #some data storage structures
     R = range(len(A))
     shuffle(R)
-
     clusters = []
     part = len(R)/k
     for i in xrange(k):
         clusters.append( R[i*part:(i+1)*(part)])
-        
-
     means = kmeansUpdate(A,clusters,dim)
     clusters,swaps = assignClusters(A,means,clusters)
-
     while swaps>2 and maxiters>0:
         maxiters-=1
         means = kmeansUpdate(A,clusters,dim)
         clusters,swaps = assignClusters(A,means,clusters)
         print "swaps = ",swaps
-    return means,swaps
+    return means, swaps
     
     
     
@@ -153,8 +143,6 @@ def classifier(centroids,data):
         retvals[i] = mindist
     return ret,retvals
 
-
-
 def findlabels(Y,tildaY,k,labels):
     '''
         find which cluster has the most of a particular label
@@ -176,15 +164,15 @@ def findlabels(Y,tildaY,k,labels):
     return ret
             
 
-from numpy import array
+#from numpy import array
 
 #read data
 Y,genelist,X = readCDTFile("../train.cdt")
 
 #need to transpose for kmeans
-Y = array([int(y[0])-1 for y in Y]).T
-X = array(X).T
+X = zip(*X) #transpose X, numpy .T prevents us from using pypy
 
+Y = [int(y[0])-1 for y in Y]
 [trainX,trainY,testX,testY]=divide(X,Y,.50)
 
 dim = len(trainX[0])

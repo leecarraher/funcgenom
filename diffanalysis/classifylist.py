@@ -63,8 +63,8 @@ def readCDTFile(filename):
 samples,gene,expression = readCDTFile("../train.cdt")
 
 #compute class centroids
-from pylab import array
-expression =  array(expression).T
+
+expression =  zip(*expression)
 
 #only two centroids, split them by samplename 1GSMXXX or 3GSMXXX
 expression1 = [0.0]*len(gene)
@@ -83,7 +83,7 @@ centroids = [expression1,expression3]
 #read test set data
 samples,gene,expression = readCDTFile("../test.cdt")
 #use centroids to classify
-classes,vals = classifier(array(centroids),array(expression).T)
+classes,vals = classifier(centroids,zip(*expression))
 for i in range(len(classes)):
     #groups are 1&3 so apply affine xfrm
     print str(samples[i]) + '->' + str(classes[i]*2+1) 
