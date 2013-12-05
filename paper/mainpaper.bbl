@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{Sotiriou}
+C.~Sotiriou, P.~Wirapati, S.~Loi, A.~Harris, S.~Fox, J.~Smeds, H.~Nordgren,
+  P.~Farmer, V.~Praz, B.~Haibe-Kains, C.~Desmedt, D.~Larsimont, F.~Cardoso,
+  H.~Peterse, D.~Nuyten, M.~Buyse, M.~J. Van~de Vijver, J.~Bergh, M.~Piccart,
+  and M.~Delorenzi, ``Gene expression profiling in breast cancer: Understanding
+  the molecular basis of histologic grade to improve prognosis,'' {\em Journal
+  of the National Cancer Institute}, vol.~98, no.~4, pp.~262--272, 2006.
+
+\bibitem{CLEAN}
+J.~Freudenberg, V.~Joshi, Z.~Hu, and M.~Medvedovic, ``Clean: Clustering
+  enrichment analysis,'' {\em BMC Bioinformatics}, vol.~10, no.~1, pp.~1--15,
+  2009.
+
+\bibitem{Treeview}
+K.~Shinde, M.~Phatak, F.~Johannes, J.~Chen, Q.~Li, J.~Vineet, Z.~Hu, K.~Ghosh,
+  J.~Meller, and M.~Medvedovic, ``Genomics portals: integrative web-platform
+  for mining genomics data,'' {\em BMC Genomics}, vol.~11, no.~1, pp.~1--10,
+  2010.
+
+\end{thebibliography}
