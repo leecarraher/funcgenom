@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.13)  5 DEC 2013 16:50
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.13)  10 DEC 2013 21:12
 entering extended mode
  %&-line parsing enabled.
 **mainpaper.tex
@@ -556,50 +556,57 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 47--51
+Underfull \hbox (badness 10000) in paragraph at lines 49--53
 
  []
 
-<docs/grade1and3differentiallyexpressed.pdf, id=35, 794.97pt x 897.3525pt>
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 54.
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 54.
+
+<docs/grade1and3differentiallyexpressed.pdf, id=46, 794.97pt x 897.3525pt>
 File: docs/grade1and3differentiallyexpressed.pdf Graphic file (type pdf)
 
 <use docs/grade1and3differentiallyexpressed.pdf>
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 77.
+(amsmath)                 on input line 107.
 
-<docs/grade2onupregulated3.pdf, id=38, 794.97pt x 819.06pt>
+<docs/grade2onupregulated3.pdf, id=49, 794.97pt x 819.06pt>
 File: docs/grade2onupregulated3.pdf Graphic file (type pdf)
 
 <use docs/grade2onupregulated3.pdf> [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./docs/grade1and3diffe
-rentiallyexpressed.pdf>] (./mainpaper.bbl) [3] [4 <./docs/grade2onupregulated3.
-pdf>] (./mainpaper.aux) ) 
+rentiallyexpressed.pdf>] [3 <./docs/grade2onupregulated3.pdf>] (./mainpaper.bbl
+ [4]) [5] (./mainpaper.aux) ) 
 Here is how much of TeX's memory you used:
- 6404 strings out of 495061
- 92009 string characters out of 1182621
- 173489 words of memory out of 3000000
- 9449 multiletter control sequences out of 15000+50000
+ 6442 strings out of 495061
+ 92512 string characters out of 1182621
+ 177489 words of memory out of 3000000
+ 9474 multiletter control sequences out of 15000+50000
  12148 words of font info for 47 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,7n,36p,322b,309s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></
-usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/tex
-mf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/
-public/amsfonts/cm/cmti10.pfb>
-Output written on mainpaper.pdf (4 pages, 240151 bytes).
+ 38i,7n,36p,322b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx
+9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmti10.pfb>
+Output written on mainpaper.pdf (5 pages, 254851 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 500000)
- 67 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 164 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
+ 75 words of extra memory for PDF output out of 10000 (max. 10000000)
 

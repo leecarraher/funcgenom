@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Sotiriou}
 C.~Sotiriou, P.~Wirapati, S.~Loi, A.~Harris, S.~Fox, J.~Smeds, H.~Nordgren,
@@ -7,6 +7,44 @@ C.~Sotiriou, P.~Wirapati, S.~Loi, A.~Harris, S.~Fox, J.~Smeds, H.~Nordgren,
   and M.~Delorenzi, ``Gene expression profiling in breast cancer: Understanding
   the molecular basis of histologic grade to improve prognosis,'' {\em Journal
   of the National Cancer Institute}, vol.~98, no.~4, pp.~262--272, 2006.
+
+\bibitem{Sotiriou1}
+C.~Sotiriou, S.-Y. Neo, L.~M. McShane, E.~L. Korn, P.~M. Long, A.~Jazaeri,
+  P.~Martiat, S.~B. Fox, A.~L. Harris, and E.~T. Liu, ``Breast cancer
+  classification and prognosis based on gene expression profiles from a
+  population-based study,'' {\em Proceedings of the National Academy of
+  Sciences}, vol.~100, no.~18, pp.~10393--10398, 2003.
+
+\bibitem{Sorlie1}
+T.~Sørlie, C.~M. Perou, R.~Tibshirani, T.~Aas, S.~Geisler, H.~Johnsen,
+  T.~Hastie, M.~B. Eisen, M.~van~de Rijn, S.~S. Jeffrey, T.~Thorsen, H.~Quist,
+  J.~C. Matese, P.~O. Brown, D.~Botstein, P.~E. Lønning, and A.-L.
+  Børresen-Dale, ``Gene expression patterns of breast carcinomas distinguish
+  tumor subclasses with clinical implications,'' {\em Proceedings of the
+  National Academy of Sciences}, vol.~98, no.~19, pp.~10869--10874, 2001.
+
+\bibitem{Vijver1}
+M.~J. van~de Vijver, Y.~D. He, L.~J. van't Veer, H.~Dai, A.~A. Hart, D.~W.
+  Voskuil, G.~J. Schreiber, J.~L. Peterse, C.~Roberts, M.~J. Marton,
+  M.~Parrish, D.~Atsma, A.~Witteveen, A.~Glas, L.~Delahaye, T.~van~der Velde,
+  H.~Bartelink, S.~Rodenhuis, E.~T. Rutgers, S.~H. Friend, and R.~Bernards,
+  ``{{A} gene-expression signature as a predictor of survival in breast
+  cancer},'' {\em N. Engl. J. Med.}, vol.~347, pp.~1999--2009, Dec 2002.
+
+\bibitem{Elston1}
+C.~Elston and I.~Ellis, ``Pathological prognostic factors in breast cancer. i.
+  the value of histological grade in breast cancer: experience from a large
+  study with long-term follow-up. cw elston \& io ellis. histopathology 1991;
+  19; 403--410,'' {\em Histopathology}, vol.~41, no.~3a, pp.~151--151, 2002.
+
+\bibitem{Hedges1}
+L.~V. Hedges, I.~Olkin, M.~Statistiker, I.~Olkin, and I.~Olkin, ``Statistical
+  methods for meta-analysis,'' 1985.
+
+\bibitem{Cleanex}
+V.~Praz, V.~Jagannathan, and P.~Bucher, ``{{C}lean{E}x: a database of
+  heterogeneous gene expression data based on a consistent gene
+  nomenclature},'' {\em Nucleic Acids Res.}, vol.~32, pp.~D542--547, Jan 2004.
 
 \bibitem{CLEAN}
 J.~Freudenberg, V.~Joshi, Z.~Hu, and M.~Medvedovic, ``Clean: Clustering
@@ -18,5 +56,17 @@ K.~Shinde, M.~Phatak, F.~Johannes, J.~Chen, Q.~Li, J.~Vineet, Z.~Hu, K.~Ghosh,
   J.~Meller, and M.~Medvedovic, ``Genomics portals: integrative web-platform
   for mining genomics data,'' {\em BMC Genomics}, vol.~11, no.~1, pp.~1--10,
   2010.
+
+\bibitem{kmeans}
+A.~Jain, ``Data clustering: 50 years beyond k-means,'' in {\em Machine Learning
+  and Knowledge Discovery in Databases} (W.~Daelemans, B.~Goethals, and
+  K.~Morik, eds.), vol.~5211 of {\em Lecture Notes in Computer Science},
+  pp.~3--4, Springer Berlin Heidelberg, 2008.
+
+\bibitem{Wold1}
+S.~Wold, M.~Sjöström, and L.~Eriksson, ``Pls-regression: a basic tool of
+  chemometrics,'' {\em Chemometrics and Intelligent Laboratory Systems},
+  vol.~58, no.~2, pp.~109 -- 130, 2001.
+\newblock <ce:title>PLS Methods</ce:title>.
 
 \end{thebibliography}
