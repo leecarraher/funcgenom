@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.13)  12 DEC 2013 16:16
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.13)  12 DEC 2013 18:01
 entering extended mode
  %&-line parsing enabled.
 **mainpaper.tex
@@ -713,231 +713,188 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--354
 
  []
 
-[6] <docs/Figure3S.png, id=185, 614.295pt x 406.51875pt>
-File: docs/Figure3S.png Graphic file (type png)
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 360--368
 
-<use docs/Figure3S.png>
-Overfull \hbox (1.11403pt too wide) in paragraph at lines 371--372
+ []
+
+<docs/Figure3S.png, id=190, 614.295pt x 406.51875pt>
+File: docs/Figure3S.png Graphic file (type png)
+ <use docs/Figure3S.png>
+<docs/Figure4S.png, id=191, 611.28375pt x 399.4925pt>
+File: docs/Figure4S.png Graphic file (type png)
+ <use docs/Figure4S.png>
+<docs/Figure5S.png, id=193, 663.47874pt x 413.545pt>
+File: docs/Figure5S.png Graphic file (type png)
+ <use docs/Figure5S.png>
+Overfull \hbox (63.27568pt too wide) in paragraph at lines 401--402
  [][] 
+ []
+
+[7 <./docs/Figure1S.png (PNG copy)> <./docs/Figure3S.png (PNG copy)>]
+Underfull \hbox (badness 2318) in paragraph at lines 407--414
+\OT1/cmr/m/n/10 Baseline KM curves Based on the
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 407--414
+\OT1/cmr/m/n/10 were per-formed for sam-ples in the
  []
 
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
-383.
+415.
 
-<docs/Figure4S.png, id=191, 611.28375pt x 399.4925pt>
-File: docs/Figure4S.png Graphic file (type png)
- <use docs/Figure4S.png>
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 38
-9.
-
-
-Package wrapfig Warning: Collision between wrapping environments on input line 
-394.
-
-<docs/Figure5S.png, id=193, 663.47874pt x 413.545pt>
 File: docs/Figure5S.png Graphic file (type png)
- <use docs/Figure5S.png>
-[7 <./docs/Figure1S.png (PNG copy)> <./docs/Figure3S.png (PNG copy)>]
+<use docs/Figure5S.png>
+Overfull \hbox (147.3558pt too wide) in paragraph at lines 418--419
+ [][] 
+ []
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 40
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 42
 2.
 
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
-411.
+427.
 
-File: docs/Figure5S.png Graphic file (type png)
-<use docs/Figure5S.png>
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 41
-8.
-
-
-Package wrapfig Warning: Collision between wrapping environments on input line 
-423.
-
-<docs/Figure2B.png, id=205, 1927.2pt x 1204.5pt>
+<docs/Figure2B.png, id=204, 553.31718pt x 464.4853pt>
 File: docs/Figure2B.png Graphic file (type png)
  <use docs/Figure2B.png>
-Overfull \hbox (442.44446pt too wide) in paragraph at lines 426--427
+Overfull \hbox (10.40453pt too wide) in paragraph at lines 430--431
  [][] 
  []
 
 [8 <./docs/Figure4S.png (PNG copy)> <./docs/Figure5S.png (PNG copy)>]
-Overfull \hbox (2.70927pt too wide) in paragraph at lines 431--436
+Underfull \hbox (badness 6173) in paragraph at lines 435--440
 [][]\OT1/cmr/m/n/10 Unsupervised clus-ter-ing be-tween
  []
 
 
-Underfull \hbox (badness 3701) in paragraph at lines 431--436
-\OT1/cmr/m/n/10 only the KJX64 set was per-
- []
-
-
-Overfull \hbox (28.80252pt too wide) in paragraph at lines 439--473
+Overfull \hbox (28.80252pt too wide) in paragraph at lines 443--477
 [][] 
  []
 
-
-Underfull \hbox (badness 3884) in paragraph at lines 477--484
-[]\OT1/cmr/m/n/10 The centroid-based ap-proach
- []
-
-[9 <./docs/Figure2B.png (PNG copy)>]
-
-Package wrapfig Warning: Collision between wrapping environments on input line 
-485.
-
-<docs/Figure3B.png, id=221, 1927.2pt x 1204.5pt>
+<docs/Figure3B.png, id=215, 807.7678pt x 696.35156pt>
 File: docs/Figure3B.png Graphic file (type png)
  <use docs/Figure3B.png>
-Overfull \hbox (442.44446pt too wide) in paragraph at lines 488--491
- [][] 
- []
-
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
-496.
+500.
 
-<docs/Figure4B.png, id=222, 1927.2pt x 1204.5pt>
+<docs/Figure4B.png, id=216, 679.03688pt x 620.3175pt>
 File: docs/Figure4B.png Graphic file (type png)
  <use docs/Figure4B.png>
-Overfull \hbox (442.44446pt too wide) in paragraph at lines 499--502
- [][] 
+[9 <./docs/Figure2B.png (PNG copy)>] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 510--522
+
  []
 
-[10 <./docs/Figure3B.png (PNG copy)> <./docs/Figure4B.png (PNG copy)>]
-
-Package wrapfig Warning: Collision between wrapping environments on input line 
-519.
-
-<docs/Figure5B.png, id=231, 1927.2pt x 1204.5pt>
+<docs/Figure5B.png, id=231, 432.11438pt x 414.79968pt>
 File: docs/Figure5B.png Graphic file (type png)
  <use docs/Figure5B.png>
-Overfull \hbox (442.44446pt too wide) in paragraph at lines 522--525
- [][] 
+
+Package wrapfig Warning: Collision between wrapping environments on input line 
+534.
+
+
+Overfull \hbox (5.28189pt too wide) in paragraph at lines 535--549
+[][] 
  []
 
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 54
-8.
-
-
-Underfull \hbox (badness 4981) in paragraph at lines 548--558
+[11 <./docs/Figure3B.png (PNG copy)> <./docs/Figure4B.png (PNG copy)>]
+Underfull \hbox (badness 4981) in paragraph at lines 552--562
 \OT1/cmr/m/n/10 uti-liz-ing re-source tools \OT1/cmr/m/it/10 DAVID
  []
 
 
-Underfull \hbox (badness 2529) in paragraph at lines 548--558
+Underfull \hbox (badness 2529) in paragraph at lines 552--562
 \OT1/cmr/m/n/10 and \OT1/cmr/m/it/10 KEGG \OT1/cmr/m/n/10 [[]22[]] [[]23[]] [[]
 24[]] [[]25[]].
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 548--558
+Underfull \hbox (badness 2495) in paragraph at lines 552--562
 \OT1/cmr/m/n/10 3 path-ways: cell cy-cle reg-u-la-
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 548--558
+Underfull \hbox (badness 4391) in paragraph at lines 552--562
 \OT1/cmr/m/n/10 meio-sis, and ubiquitin-mediated
  []
 
-[11]
-
-Package wrapfig Warning: Collision between wrapping environments on input line 
-560.
-
-<docs/Figure6B.png, id=255, 1927.2pt x 1204.5pt>
+<docs/Figure6B.png, id=246, 679.03688pt x 496.10344pt>
 File: docs/Figure6B.png Graphic file (type png)
  <use docs/Figure6B.png>
-Overfull \hbox (442.44446pt too wide) in paragraph at lines 563--565
+Overfull \hbox (22.35468pt too wide) in paragraph at lines 567--569
  [][] 
  []
 
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
-570.
+574.
 
-<docs/Figure7B.png, id=256, 1927.2pt x 1204.5pt>
+<docs/Figure7B.png, id=247, 835.62187pt x 590.205pt>
 File: docs/Figure7B.png Graphic file (type png)
  <use docs/Figure7B.png>
-Overfull \hbox (442.44446pt too wide) in paragraph at lines 573--576
- [][] 
- []
-
 [12 <./docs/Figure5B.png (PNG copy)>]
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
-580.
+584.
 
-<docs/Figure8B.png, id=261, 1927.2pt x 1204.5pt>
+<docs/Figure8B.png, id=261, 639.89063pt x 655.69969pt>
 File: docs/Figure8B.png Graphic file (type png)
  <use docs/Figure8B.png>
-Overfull \hbox (442.44446pt too wide) in paragraph at lines 583--586
- [][] 
- []
-
 [13 <./docs/Figure6B.png (PNG copy)>]
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 62
-6.
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 63
+0.
 
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 62
-7.
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 63
+1.
 
-[14 <./docs/Figure7B.png (PNG copy)> <./docs/Figure8B.png (PNG copy)>]
-Underfull \hbox (badness 1436) in paragraph at lines 641--645
-\OT1/cmr/m/n/10 While we were able to an-a-lyze
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 641--645
-\OT1/cmr/m/n/10 man-ner, there was no way for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 641--645
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 652--656
+[14 <./docs/Figure7B.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 645--649
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 657--661
+Underfull \hbox (badness 10000) in paragraph at lines 656--660
 
  []
 
-(./mainpaper.bbl [16]) [17] (./mainpaper.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 661--665
+
+ []
+
+(./mainpaper.bbl [15 <./docs/Figure8B.png (PNG copy)>] [16]) [17]
+(./mainpaper.aux) ) 
 Here is how much of TeX's memory you used:
  6595 strings out of 495061
  94626 string characters out of 1182621
- 185800 words of memory out of 3000000
+ 183801 words of memory out of 3000000
  9557 multiletter control sequences out of 15000+50000
  12456 words of font info for 48 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,8n,36p,406b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
-cmr5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
-r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fo
-nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb>
-Output written on mainpaper.pdf (17 pages, 3504698 bytes).
+ 38i,8n,36p,406b,404s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+
+Output written on mainpaper.pdf (17 pages, 1558527 bytes).
 PDF statistics:
  352 PDF objects out of 1000 (max. 8388607)
  84 named destinations out of 1000 (max. 500000)

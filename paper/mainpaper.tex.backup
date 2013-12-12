@@ -43,9 +43,9 @@ assist in diagnosis and treatment options for breast cancer patients.
 
 \section{Background}   
 Breast Cancer is the most common malignancy among women and is the second 
-leading cause of cancer death. DeSantis et al predict that there will be 230,480 
-new cases of invasive breast cancer in 2011 and that there will be 39,520 deaths 
-related to breast cancer.  The incident rate of new cases of breast cancer is highest 
+leading cause of cancer death.The American Cancer Society estimated 234,580 new 
+cases of breast cancer in US, 2013 and 40,030 deaths related to breast cancer. 
+The incident rate of new cases of breast cancer is highest 
 for Whites and second highest for African Americans \cite{henderson1}.  Breast cancer incidence is lowest for those of American Indian/Alaska Native, 
 Asian American/Pacific Islander, and Hispanic/Latina descent.  Similarly morality is 
 highest for Whites and second highest for African Americans while the lowest mortality 
@@ -152,10 +152,8 @@ inferences cannot be made as to ER negative tumors. Future work would include lo
  compare the gene list between each other. This can shed light on which specific genes are dependent 
 on the ER status of tumors. \\
 
-Future work would include looking into the differentially expressed genes in both estrogen 
-receptor positive and negative tumors and then compare the gene list between each other. 
 In addition, looking at expression signatures based on AJCC staging classification systems 
-may decease may decrease some data set variation. The main criteria of the AJCC staging 
+may decease some data set variation. The main criteria of the AJCC staging 
 systems include tumor size, lymph node status, and distant metastasis. Future studies should 
 also examine age of onset, races and geographic regions to look for variability and to improve 
 treatment for different groups.\\ 
@@ -211,9 +209,11 @@ and 17 samples did not have histologic grade known. Importantly, none of these p
 
 \subsection{Differential Expression Modeling Methods}
 \begin{wrapfigure}{r}{0.63\textwidth}
+%\begin{figure}
 \centering
 \includegraphics[scale=0.43]{docs/grade1and3differentiallyexpressed}
-\caption{Grade 1 and Grade 3 Differentially Expressed}\label{grade13diff}
+\caption{Grade 1 and Grade 3 Differentially Expressed.}\label{grade13diff}
+%\end{figure}
 \end{wrapfigure}
 Our method of assessing histological grade of primary breast cancer consists of three phases. The first phase is
 a semi-supervised ranking of genes and grade 1 and grade 3 tumors based on maximum differential
@@ -227,8 +227,8 @@ CLEAN co-clusters
 the genes and sample grades hierarchically, using data from the dataset and a database of known gene functional groups. Highly differentially
 expressed genes were identified with a p-value of .001, and fold change over expression level of 2. The results of this analysis
 were inspected in genomics portal's Treeview navigator\cite{Treeview}, and the visually most cohesive up-regulated set of genes
-corresponding to grade 3 tumors was selected as our gene signature\ref{grade13diff}. 
-Inspection with Treeview failed to suggested a 
+corresponding to grade 3 tumors were selected as our gene signature Figure \ref{grade13diff}. 
+Inspection with Treeview failed to suggest a 
 visually significant cluster of down-regulated genes for grade 3 tumors, therefore only up-regulated ones were included in our model. 
 We acquired a set of 49 differentially expressed up-regulated grade 3 tumor genes from this analysis.
 As expected most of those genes turned out to be cell proliferation and cell cycle regulators, notably among them were:
@@ -247,34 +247,34 @@ Centroid(Grade_X)= \left[              \underset{x\in X}     \sum{  { {x_1}    \
 \ldots ,
  \underset{x\in X}     \sum{  { {x_{| gene signature |}}    \over {| X |} } }                 \right] 
 $$
-\caption{Grade Gene Expression Centroid Generation}\label{centroid}
+\caption{Grade Gene Expression Centroid Generation.}\label{centroid}
 \end{wrapfigure}
 Using the selected set of 49 genes as a signature we supposed a $|$gene signature$|-$dimensional subspace to build our model.
 Withing the subspace, we used the clinically provided grade labels to generate centroids for the two , 1 and 3 - grade, groups following
 the expression (Figure \ref{centroid}) . Noise suppression refinement was performed by removing samples that deviated from the group cluster
 centers by more than 2 standard deviations of the cluster's mean variance.\\
 
-\begin{wrapfigure}{r}{0.64\textwidth}
+\begin{wrapfigure}{r}{0.60\textwidth}
 %\begin{figure}
 \centering
-\includegraphics[scale=0.38]{docs/grade2onupregulated3}
-\caption{Grade 2 Differentially Expressed Genes from Grade 1 and Grade 3}\label{grade2up}
+\includegraphics[scale=0.33]{docs/grade2onupregulated3}
+\caption{Grade 2 Differentially Expressed Genes from Grade 1 and Grade 3.}\label{grade2up}
 %\end{figure}
 \end{wrapfigure}
 For visual assessment of our analysis, we queried the grade 2 tumors against the grade 1 and 3 differentially expressed genes. The resulting chart
 shows a distinct clustering between the grade 1-like and grade 3-like tumors that follow approximately 
 the grade 3 and grade 1 distributions. Assuming the dataset comprises the actual distribution 
-of grade 1 to grade 3 tumors, approximately 55:64 for grade 1 and grade 3 respectively (figure \ref{grade2up}) we reassert our hypothesis
+of grade 1 to grade 3 tumors, approximately 55:64 for grade 1 and grade 3 respectively (Figure \ref{grade2up}) we reassert our hypothesis
 of the lack of a grade 2 class distinction.
 
-Classification of grade 2 tumors was then computed by nearest centroid under the euclidean norm following the method in figure \ref{classify}.
+Classification of grade 2 tumors was then computed by nearest centroid under the euclidean norm following the method in Figure \ref{classify}.
 Other distance norms could easily be substituted in place of euclidean, however in this analysis we assumed expression levels were orthogonal
 and linear. The new classifications were then used to recompute the KM-Survival analysis on tumor grades 2A (or grade 1-like) and 2b (or grade 3-like).
 \begin{wrapfigure}{l}{0.5\textwidth}
  $$
 Grade(X) = \underset{C \in Centroids} {\mathrm{argmin}} ~ \left( \sqrt{\sum_{g\in genelist}{ (X_{g} - C_{g})^2}}\right)
 $$
-\caption{Nearest Centroid Classification}\label{classify}
+\caption{Nearest Centroid Classification.}\label{classify}
 \end{wrapfigure}
 
 \subsection{Unsupervised Machine Learning Methods}
@@ -350,7 +350,8 @@ For context, figure \ref{1S} shows three KM curves from the Sotiriou paper:
 Graph \ref{1S} shows the original data from their analysis. Grade 1, 2, and 3 tumor 
 curves clearly separate from each other, clearly creating 3 separate and distinct 
 classes. However, we would like to demonstrate that grade 2 tumors should 
-actually be classified as either grade 1 or grade 3. 
+actually be classified as either grade 1 or grade 3. \\
+
 This is analysis is begun in graph B, as Sotiriou et al. used something 
 they called the “Gene Expression Grade Index” (GGI) to reclassify 
 grade 2 tumors. This index is shown below:
@@ -368,10 +369,10 @@ each grade 2 sample to either grade 1 or 3 to produce the graph in Figure \ref{3
 %\begin{figure}
 \centering
 \includegraphics[scale=0.40]{docs/Figure3S}
-\caption{Reclassification of grade 2 samples using nearest-centroid method}\label{3s}
+\caption{Reclassification of grade 2 samples using nearest-centroid method.}\label{3S}
 %\end{figure}
 \end{wrapfigure}
-Using Figure \ref{3s} we were able to see a difference between our re-graded curve 
+Using Figure \ref{3S} we were able to see a difference between our re-graded curve 
 and the original. Our reclassification actually intensified the gap between the grade 1 and 3 curves.
 Figure \ref{4S} shows the integration of grade 2 reclassifications in Figure  \ref{3S} with 
 the original grade 1 and 3 samples. That is, the curve labeled “grade 1” in 
@@ -379,11 +380,11 @@ Figure  \ref{4S} includes all of the original grade 1 samples and grade 2 sample
 that were classified as “1-like”, while the grade 3 curve contains the original
  grade 3 samples and the grade 2 samples that were classified as “3-like”. 
 The graph is analogous to the Sotiriou analysis shown in Figure \ref{4S}-C.
- \begin{wrapfigure}{r}{0.64\textwidth}
+ \begin{wrapfigure}{r}{1\textwidth}
 %\begin{figure}
 \centering
-\includegraphics[scale=0.38]{docs/Figure4S}
-\caption{All samples reclassified using the nearest-centroid method}\label{4S}
+\includegraphics[scale=0.58]{docs/Figure4S}
+\caption{All samples reclassified using the nearest-centroid method.}\label{4S}
 %\end{figure}
 \end{wrapfigure}
 For a sort of control, we thought it might be interesting to run a similar 
@@ -407,10 +408,10 @@ The ER negative samples tended to have worse prognosis than ER positive samples 
 the difference did not reach statistical significance. This trend is consistent with literature 
 evidence that ER negative tumors are more malignant.  
 
- \begin{wrapfigure}{r}{0.64\textwidth}
+ \begin{wrapfigure}{r}{0.70\textwidth}
 %\begin{figure}
 \centering
-\includegraphics[scale=0.38]{docs/Figure5S}
+\includegraphics[scale=0.40]{docs/Figure5S}
 \caption{ KM curve of relapse free survival over time in ER positive versus ER negative samples.}\label{1B}
 %\end{figure}
 \end{wrapfigure}
@@ -419,11 +420,11 @@ Histologic grades 2 and 3 were associated with worse prognosis with regard to re
 free survival than grade 1 (Figure \ref{2B}).  Interestingly, there was no observed difference 
 between grade 2 and 3 tumors.  
 
- \begin{wrapfigure}{r}{0.64\textwidth}
+ \begin{wrapfigure}{r}{0.6\textwidth}
 %\begin{figure}
 \centering
-\includegraphics[scale=0.38]{docs/Figure2B}
-\caption{ KM curve of relapse free survival over time in groups based on histologic grades..}\label{2B}
+\includegraphics[scale=0.41]{docs/Figure2B}
+\caption{ KM curve of relapse free survival over time in groups based on histologic grades.}\label{2B}
 %\end{figure}
 \end{wrapfigure}
 
@@ -481,7 +482,7 @@ with significantly lower risk of disease relapse.  Figure \ref{4B} depicts the K
 centroid-based reclassification of only grade 2 tumor samples in the KJ125 set and 
 also demonstrates better prognosis for those samples reclassified as grade 1-like.  
 
- \begin{wrapfigure}{r}{0.64\textwidth}
+ \begin{wrapfigure}{r}{1.\textwidth}
 %\begin{figure}
 \centering
 \includegraphics[scale=0.38]{docs/Figure3B}
@@ -495,7 +496,7 @@ microarray gene expression profiles.}\label{3B}
  \begin{wrapfigure}{r}{0.64\textwidth}
 %\begin{figure}
 \centering
-\includegraphics[scale=0.38]{docs/Figure4B}
+\includegraphics[scale=0.40]{docs/Figure4B}
 \caption{ KM analysis of relapse free survival between 
 histologic grade 2 tumors in KJ125 set reclassified as 
 1-like or 3-like based on gene expression profiles.}\label{4B}
@@ -513,20 +514,20 @@ analysis were found in this cluster. Furthermore, there were only 3 luminal A su
  in this dataset. These findings are consistent with observations that luminal A subtype
  tumors are less aggressive than basal-like tumors and serves as a validation of our 
 generated gene list. The TCGA paper does not provide survival data, which would 
-be another interesting validation to be explored in the future.
+be another interesting validation to be explored in the future.\\
 
- \begin{wrapfigure}{r}{0.64\textwidth}
+ \begin{wrapfigure}{r}{1.\textwidth}
 %\begin{figure}
 \centering
-\includegraphics[scale=0.38]{docs/Figure5B}
+\includegraphics[scale=0.80]{docs/Figure5B}
 \caption{ Query of TCGA RNAseq gene expression data with our generated list of genes 
 based on Sotiriou microarray expression profiles.  There is a cluster of increased gene 
-expression (yellow box) containing 108 samples which can be considered grade 3-like}\label{5B}
+expression (yellow box) containing 108 samples which can be considered grade 3-like.}\label{5B}
 %\end{figure}
 \end{wrapfigure}
 
 
-\begin{figure}
+ \begin{wrapfigure}{r}{0.64\textwidth}
 \begin{tabular}{| l | l | l | l | }
     \hline
 \textbf{Subtype} & \textbf{Number of} & \textbf{Number of tumors in } & \textbf{Percent}\\  
@@ -541,8 +542,8 @@ Normal & 6 & 2 & 33\% \\ \hline
 \end{tabular}
 \caption{Query of TCGA RNAseq gene expression data with our generated list of genes,
  clustered by PAM50 subtype.  The cluster of increased expression (grade 3-like) has a preponderance 
-of Basal-like tumors and paucity of luminal A tumors. }\label{T2}
-\end{figure}
+of Basal-like tumors and paucity of luminal A tumors.}\label{T2}
+\end{wrapfigure}
 
 We further explored the gene list of any functional annotation utilizing resource tools 
 \emph{DAVID} and \emph{KEGG}\cite{Huang1}\cite{Kanehisa1}\cite{Kanehisa2}\cite{Ogata1}.  These analyses found that our gene list 
@@ -556,33 +557,33 @@ be associated with oncologic processes in multiple other organs according to
 queries of the GeneCards web tool (www.genecards.org).  
 
 
- \begin{wrapfigure}{r}{0.64\textwidth}
+ \begin{wrapfigure}{r}{1.\textwidth}
 %\begin{figure}
 \centering
-\includegraphics[scale=0.38]{docs/Figure6B}
+\includegraphics[scale=0.70]{docs/Figure6B}
 \caption{List of differentially upregulated genes in histologic 
 grade 3 tumors is enriched for the pathway of cell cycle regulation.}\label{6B}
 %\end{figure}
 \end{wrapfigure}
 
 
- \begin{wrapfigure}{r}{0.64\textwidth}
+ \begin{wrapfigure}{r}{1.\textwidth}
 %\begin{figure}
 \centering
-\includegraphics[scale=0.38]{docs/Figure7B}
+\includegraphics[scale=0.50]{docs/Figure7B}
 \caption{ List of differentially upregulated genes in 
 histologic grade 3 tumors is enriched for the pathway 
-of progesterone-mediated oocyte maturation}\label{7B}
+of progesterone-mediated oocyte maturation.}\label{7B}
 %\end{figure}
 \end{wrapfigure}
 
  \begin{wrapfigure}{r}{0.64\textwidth}
 %\begin{figure}
 \centering
-\includegraphics[scale=0.38]{docs/Figure8B}
+\includegraphics[scale=0.45]{docs/Figure8B}
 \caption{ List of differentially upregulated genes in histologic grade 
 3 tumors is enriched for the pathway of ubiquitin-mediated protein 
-degradation}\label{8B}
+degradation.}\label{8B}
 %\end{figure}
 \end{wrapfigure}
 
@@ -640,7 +641,8 @@ and the PAM50 results.
 While we were able to analyze the given dataset in an unbiased manner, 
 there was no way for us to control the data given to us. In that vein, we 
 were unable to control the research population for tumor size, age, 
-margin, ER status, or lymph node status.
+margin, ER status, or lymph node status.\\
+
 On a similar note, there was no way for us to alter our survival analysis 
 based on what treatments were being offered to each patient. The 
 possibility that different patients were participating in different treatments 
@@ -651,10 +653,12 @@ Our work with the Sotirou paper was only able to reproduce their analysis
 and improve upon it slightly. There is still a large amount of work that could 
 be done to further validate our methods, as well as to delve deeper in to the 
 work done by both our teams.\\
+
 Firstly, in order to prove our work we would like to perform validation in
  some other independent datasets. In addition, we could perform a 
 prospective study at some point in the future. Unfortunately, this does seem 
 unlikely.\\
+
 Moreover, an easier way to validate our results would be to perform the same 
 analysis using the Distant Metastasis Free Survival Rate (DMFS). Our work 
 solely included Relapse Free Survival (DFS) data.
