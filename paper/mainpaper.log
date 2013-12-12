@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.13)  12 DEC 2013 15:48
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.13)  12 DEC 2013 16:16
 entering extended mode
  %&-line parsing enabled.
 **mainpaper.tex
@@ -603,37 +603,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--154
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--162
+Underfull \hbox (badness 10000) in paragraph at lines 155--160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--171
+Underfull \hbox (badness 10000) in paragraph at lines 165--169
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 172.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 170.
 
 (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 172.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 170.
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--191
+Underfull \hbox (badness 10000) in paragraph at lines 177--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--198
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 192--200
-
- []
-
 <docs/grade1and3differentiallyexpressed.pdf, id=132, 794.97pt x 897.3525pt>
 File: docs/grade1and3differentiallyexpressed.pdf Graphic file (type pdf)
 
 <use docs/grade1and3differentiallyexpressed.pdf>
-Overfull \hbox (56.45847pt too wide) in paragraph at lines 215--216
+Overfull \hbox (56.45847pt too wide) in paragraph at lines 214--215
  [][] 
  []
 
@@ -667,30 +668,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 252--256
 File: docs/grade2onupregulated3.pdf Graphic file (type pdf)
 
 <use docs/grade2onupregulated3.pdf>
-Overfull \hbox (12.19257pt too wide) in paragraph at lines 260--261
- [][] 
- []
-
-
-Underfull \hbox (badness 1158) in paragraph at lines 264--269
-[][]\OT1/cmr/m/n/10 For vi-sual as-sess-ment of our
- []
-
-
-Underfull \hbox (badness 1412) in paragraph at lines 264--269
-\OT1/cmr/m/n/10 re-sult-ing chart shows a dis-tinct
- []
-
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
 273.
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 270--278
-\OT1/cmr/m/n/10 troid un-der the eu-clidean norm
+Underfull \hbox (badness 1755) in paragraph at lines 270--278
+[]\OT1/cmr/m/n/10 Classification of grade 2 tu-mors
  []
 
-[5 <./docs/grade2onupregulated3.pdf>]
+
+Underfull \hbox (badness 4582) in paragraph at lines 270--278
+\OT1/cmr/m/n/10 anal-y-sis on tu-mor grades 2A (or
+ []
+
 
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 27
 8.
@@ -700,11 +691,11 @@ Package wrapfig Warning: Stationary wrapfigure forced to float on input line 28
 0.
 
 
-Overfull \hbox (10.69243pt too wide) in paragraph at lines 280--280
+Underfull \hbox (badness 1817) in paragraph at lines 280--280
 []\OT1/cmr/bx/n/12 Unsupervised Ma-chine
  []
 
-
+[5 <./docs/grade2onupregulated3.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 281--289
 
  []
@@ -722,7 +713,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--354
 
  []
 
-[6] <docs/Figure3S.png, id=184, 614.295pt x 406.51875pt>
+[6] <docs/Figure3S.png, id=185, 614.295pt x 406.51875pt>
 File: docs/Figure3S.png Graphic file (type png)
 
 <use docs/Figure3S.png>
@@ -731,13 +722,10 @@ Overfull \hbox (1.11403pt too wide) in paragraph at lines 371--372
  []
 
 
-LaTeX Warning: Reference `3s' on page 7 undefined on input line 375.
-
-
 Package wrapfig Warning: Collision between wrapping environments on input line 
 383.
 
-<docs/Figure4S.png, id=189, 611.28375pt x 399.4925pt>
+<docs/Figure4S.png, id=191, 611.28375pt x 399.4925pt>
 File: docs/Figure4S.png Graphic file (type png)
  <use docs/Figure4S.png>
 
@@ -748,7 +736,7 @@ Package wrapfig Warning: Stationary wrapfigure forced to float on input line 38
 Package wrapfig Warning: Collision between wrapping environments on input line 
 394.
 
-<docs/Figure5S.png, id=191, 663.47874pt x 413.545pt>
+<docs/Figure5S.png, id=193, 663.47874pt x 413.545pt>
 File: docs/Figure5S.png Graphic file (type png)
  <use docs/Figure5S.png>
 [7 <./docs/Figure1S.png (PNG copy)> <./docs/Figure3S.png (PNG copy)>]
@@ -862,7 +850,7 @@ Underfull \hbox (badness 4391) in paragraph at lines 548--558
 Package wrapfig Warning: Collision between wrapping environments on input line 
 560.
 
-<docs/Figure6B.png, id=254, 1927.2pt x 1204.5pt>
+<docs/Figure6B.png, id=255, 1927.2pt x 1204.5pt>
 File: docs/Figure6B.png Graphic file (type png)
  <use docs/Figure6B.png>
 Overfull \hbox (442.44446pt too wide) in paragraph at lines 563--565
@@ -873,7 +861,7 @@ Overfull \hbox (442.44446pt too wide) in paragraph at lines 563--565
 Package wrapfig Warning: Collision between wrapping environments on input line 
 570.
 
-<docs/Figure7B.png, id=255, 1927.2pt x 1204.5pt>
+<docs/Figure7B.png, id=256, 1927.2pt x 1204.5pt>
 File: docs/Figure7B.png Graphic file (type png)
  <use docs/Figure7B.png>
 Overfull \hbox (442.44446pt too wide) in paragraph at lines 573--576
@@ -885,7 +873,7 @@ Overfull \hbox (442.44446pt too wide) in paragraph at lines 573--576
 Package wrapfig Warning: Collision between wrapping environments on input line 
 580.
 
-<docs/Figure8B.png, id=260, 1927.2pt x 1204.5pt>
+<docs/Figure8B.png, id=261, 1927.2pt x 1204.5pt>
 File: docs/Figure8B.png Graphic file (type png)
  <use docs/Figure8B.png>
 Overfull \hbox (442.44446pt too wide) in paragraph at lines 583--586
@@ -926,35 +914,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 657--661
 
  []
 
-(./mainpaper.bbl [16]) [17] (./mainpaper.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+(./mainpaper.bbl [16]) [17] (./mainpaper.aux) ) 
 Here is how much of TeX's memory you used:
- 6596 strings out of 495061
- 94630 string characters out of 1182621
+ 6595 strings out of 495061
+ 94626 string characters out of 1182621
  185800 words of memory out of 3000000
- 9558 multiletter control sequences out of 15000+50000
+ 9557 multiletter control sequences out of 15000+50000
  12456 words of font info for 48 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  38i,8n,36p,406b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
-share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on mainpaper.pdf (17 pages, 3505016 bytes).
+</usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmr5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb>
+Output written on mainpaper.pdf (17 pages, 3504698 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
+ 352 PDF objects out of 1000 (max. 8388607)
  84 named destinations out of 1000 (max. 500000)
  186 words of extra memory for PDF output out of 10000 (max. 10000000)
 

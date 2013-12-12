@@ -43,9 +43,9 @@ assist in diagnosis and treatment options for breast cancer patients.
 
 \section{Background}   
 Breast Cancer is the most common malignancy among women and is the second 
-leading cause of cancer death. DeSantis et al predict that there will be 230,480 
-new cases of invasive breast cancer in 2011 and that there will be 39,520 deaths 
-related to breast cancer.  The incident rate of new cases of breast cancer is highest 
+leading cause of cancer death.The American Cancer Society estimated 234,580 new 
+cases of breast cancer in US, 2013 and 40,030 deaths related to breast cancer. 
+The incident rate of new cases of breast cancer is highest 
 for Whites and second highest for African Americans \cite{henderson1}.  Breast cancer incidence is lowest for those of American Indian/Alaska Native, 
 Asian American/Pacific Islander, and Hispanic/Latina descent.  Similarly morality is 
 highest for Whites and second highest for African Americans while the lowest mortality 
@@ -152,10 +152,8 @@ inferences cannot be made as to ER negative tumors. Future work would include lo
  compare the gene list between each other. This can shed light on which specific genes are dependent 
 on the ER status of tumors. \\
 
-Future work would include looking into the differentially expressed genes in both estrogen 
-receptor positive and negative tumors and then compare the gene list between each other. 
 In addition, looking at expression signatures based on AJCC staging classification systems 
-may decease may decrease some data set variation. The main criteria of the AJCC staging 
+may decease some data set variation. The main criteria of the AJCC staging 
 systems include tumor size, lymph node status, and distant metastasis. Future studies should 
 also examine age of onset, races and geographic regions to look for variability and to improve 
 treatment for different groups.\\ 
@@ -211,9 +209,11 @@ and 17 samples did not have histologic grade known. Importantly, none of these p
 
 \subsection{Differential Expression Modeling Methods}
 \begin{wrapfigure}{r}{0.63\textwidth}
+%\begin{figure}
 \centering
 \includegraphics[scale=0.43]{docs/grade1and3differentiallyexpressed}
 \caption{Grade 1 and Grade 3 Differentially Expressed.}\label{grade13diff}
+%\end{figure}
 \end{wrapfigure}
 Our method of assessing histological grade of primary breast cancer consists of three phases. The first phase is
 a semi-supervised ranking of genes and grade 1 and grade 3 tumors based on maximum differential
@@ -227,8 +227,8 @@ CLEAN co-clusters
 the genes and sample grades hierarchically, using data from the dataset and a database of known gene functional groups. Highly differentially
 expressed genes were identified with a p-value of .001, and fold change over expression level of 2. The results of this analysis
 were inspected in genomics portal's Treeview navigator\cite{Treeview}, and the visually most cohesive up-regulated set of genes
-corresponding to grade 3 tumors was selected as our gene signature\ref{grade13diff}. 
-Inspection with Treeview failed to suggested a 
+corresponding to grade 3 tumors were selected as our gene signature Figure \ref{grade13diff}. 
+Inspection with Treeview failed to suggest a 
 visually significant cluster of down-regulated genes for grade 3 tumors, therefore only up-regulated ones were included in our model. 
 We acquired a set of 49 differentially expressed up-regulated grade 3 tumor genes from this analysis.
 As expected most of those genes turned out to be cell proliferation and cell cycle regulators, notably among them were:
@@ -254,20 +254,20 @@ Withing the subspace, we used the clinically provided grade labels to generate c
 the expression (Figure \ref{centroid}) . Noise suppression refinement was performed by removing samples that deviated from the group cluster
 centers by more than 2 standard deviations of the cluster's mean variance.\\
 
-\begin{wrapfigure}{r}{0.64\textwidth}
+\begin{wrapfigure}{r}{0.60\textwidth}
 %\begin{figure}
 \centering
-\includegraphics[scale=0.38]{docs/grade2onupregulated3}
+\includegraphics[scale=0.33]{docs/grade2onupregulated3}
 \caption{Grade 2 Differentially Expressed Genes from Grade 1 and Grade 3.}\label{grade2up}
 %\end{figure}
 \end{wrapfigure}
 For visual assessment of our analysis, we queried the grade 2 tumors against the grade 1 and 3 differentially expressed genes. The resulting chart
 shows a distinct clustering between the grade 1-like and grade 3-like tumors that follow approximately 
 the grade 3 and grade 1 distributions. Assuming the dataset comprises the actual distribution 
-of grade 1 to grade 3 tumors, approximately 55:64 for grade 1 and grade 3 respectively (figure \ref{grade2up}) we reassert our hypothesis
+of grade 1 to grade 3 tumors, approximately 55:64 for grade 1 and grade 3 respectively (Figure \ref{grade2up}) we reassert our hypothesis
 of the lack of a grade 2 class distinction.
 
-Classification of grade 2 tumors was then computed by nearest centroid under the euclidean norm following the method in figure \ref{classify}.
+Classification of grade 2 tumors was then computed by nearest centroid under the euclidean norm following the method in Figure \ref{classify}.
 Other distance norms could easily be substituted in place of euclidean, however in this analysis we assumed expression levels were orthogonal
 and linear. The new classifications were then used to recompute the KM-Survival analysis on tumor grades 2A (or grade 1-like) and 2b (or grade 3-like).
 \begin{wrapfigure}{l}{0.5\textwidth}
@@ -372,7 +372,7 @@ each grade 2 sample to either grade 1 or 3 to produce the graph in Figure \ref{3
 \caption{Reclassification of grade 2 samples using nearest-centroid method.}\label{3S}
 %\end{figure}
 \end{wrapfigure}
-Using Figure \ref{3s} we were able to see a difference between our re-graded curve 
+Using Figure \ref{3S} we were able to see a difference between our re-graded curve 
 and the original. Our reclassification actually intensified the gap between the grade 1 and 3 curves.
 Figure \ref{4S} shows the integration of grade 2 reclassifications in Figure  \ref{3S} with 
 the original grade 1 and 3 samples. That is, the curve labeled “grade 1” in 
