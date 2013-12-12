@@ -119,4 +119,23 @@ S.~Wold, M.~Sjöström, and L.~Eriksson, ``Pls-regression: a basic tool of
   vol.~58, no.~2, pp.~109 -- 130, 2001.
 \newblock <ce:title>PLS Methods</ce:title>.
 
+\bibitem{Huang1}
+d.~a.~W. Huang, B.~T. Sherman, and R.~A. Lempicki, ``{{S}ystematic and
+  integrative analysis of large gene lists using {D}{A}{V}{I}{D} bioinformatics
+  resources},'' {\em Nat Protoc}, vol.~4, no.~1, pp.~44--57, 2009.
+
+\bibitem{Kanehisa1}
+M.~Kanehisa, S.~Goto, Y.~Sato, M.~Kawashima, M.~Furumichi, and M.~Tanabe,
+  ``{{D}ata, information, knowledge and principle: back to metabolism in
+  {K}{E}{G}{G}},'' {\em Nucleic Acids Res.}, Nov 2013.
+
+\bibitem{Kanehisa2}
+M.~Kanehisa, ``{{M}olecular network analysis of diseases and drugs in
+  {K}{E}{G}{G}},'' {\em Methods Mol. Biol.}, vol.~939, pp.~263--275, 2013.
+
+\bibitem{Ogata1}
+H.~Ogata, S.~Goto, K.~Sato, W.~Fujibuchi, H.~Bono, and M.~Kanehisa,
+  ``{{K}{E}{G}{G}: {K}yoto {E}ncyclopedia of {G}enes and {G}enomes},'' {\em
+  Nucleic Acids Res.}, vol.~27, pp.~29--34, Jan 1999.
+
 \end{thebibliography}
