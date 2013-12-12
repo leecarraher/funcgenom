@@ -62,12 +62,14 @@ Histologic tumor grade in these datasets was based on the Elston –
 Ellis grading system \cite{Elston1} and the standardized mean difference of Hedges 
 and Olkin \cite{Hedges1} was used to rank genes by their differential expression. The probe 
 sets of the Affymetrix U133A Genechips were mapped to other microarray platforms
- by matching the Unigene identifiers (version 180), following the technique mentioned in Praz et al. \cite{Cleanex}
+ by matching the Unigene identifiers (version 180), following the technique mentioned 
+in Praz et al. \cite{Cleanex}.\\
 For gene expression analysis, RNA was isolated by utilization of TRIzol, which 
 is a monophasic solution of phenol and guanidinium isothiocyanate, used for 
 solubilizing biological material and denaturation of proteins. Agilent Bioanalyzer 
 was used for optimization and quality control of the RNA obtained from all those
- tumor samples and only the ones with good quality of RNA were acknowledged for further examination. 
+ tumor samples and only the ones with good quality of RNA were acknowledged 
+for further examination.\\
 For the purpose of our analysis, while selecting the grade-associated genes, 
 we only considered the ER-positive tumors and excluded the ones with ER-negative
  and NA status on account of the relationship between the ER status and histologic 
@@ -75,7 +77,7 @@ grade. As mentioned in the Sotiriou et al. paper \cite{Sotiriou}, majority of th
  are grouped as either intermediate (Grade 2) or high (Grade 3) histologic grade, 
 assuming that we had utilized all histologic grade 1 and 3 tumors despite their ER 
 status during our analysis, we might have ended up choosing ER-identified genes
- that were falsely connected with grade.
+ that were falsely connected with grade.\\
 
 
 \subsection{Differential Expression Modeling Methods}
@@ -90,19 +92,35 @@ Genomics portals performs differential analysis on genes and samples using the C
 the genes and sample grades hierarchically, using data from the dataset and a database of known gene functional groups. Highly differentially
 expressed genes were identified with a p-value of .001, and fold change over expression level of 2. The results of this analysis
 were inspected in genomics portal's Treeview navigator\cite{Treeview}, and the visually most cohesive up-regulated set of genes
-corresponding to grade 3 tumors was selected as our gene signature\ref{grade13diff}. Inspection with Treeview failed to suggested a 
+corresponding to grade 3 tumors was selected as our gene signature\ref{grade13diff}. 
+Inspection with Treeview failed to suggested a 
 visually significant cluster of down-regulated genes for grade 3 tumors, therefore only up-regulated ones were included in our model. 
-We acquired a set of 49 differentially expressed up-regulated grade 3 tumor genes from this analysis.\\
-\begin{figure}
+We acquired a set of 49 differentially expressed up-regulated grade 3 tumor genes from this analysis.
+As expected most of those genes turned out to be cell proliferation and cell cycle regulators, notably among them were:
+\begin{wrapfigure}{r}{0.63\textwidth}
 \centering
-\includegraphics[scale=0.50]{docs/grade1and3differentiallyexpressed}
+\includegraphics[scale=0.40]{docs/grade1and3differentiallyexpressed}
 \caption{Grade 1 and Grade 3 Differentially Expressed}\label{grade13diff}
-\end{figure}
+\end{wrapfigure}
+\begin{itemize}
+\item Chemokines (known to mediate cell migration and proliferation)
+\item Cyclins (control the progression of cells through the cell cycle by activating cyclin-dependent kinase-cdk enzymes)
+\item Cyclin-dependent kinase inhibitors  (interact with, and dephosphorylate CDK kinase,
+ thus preventing their activation; reported to be deleted, mutated, or overexpressed 
+in several kinds of cancers)
+\item Aurora Kinase A/ Breast Tumor-Amplified Kinase (involved in microtubule formation 
+and stabilization at the spindle pole during chromosome segregation, may play a role
+ in tumor development and progression).
+\item Ubiquitin-conjugating enzyme E2S (required for cell cycle progression by degradation 
+of mitotic cyclins, consequently, may be involved in cancer progression).
+\end{itemize}
+
+
 Using the selected set of 49 genes as a signature we supposed a $|$gene signature$|-$dimensional subspace to build our model.
 Withing the subspace, we used the clinically provided grade labels to generate centroids for the two , 1 and 3 - grade, groups following
 the expression (Figure \ref{centroid}) . Noise suppression refinement was performed by removing samples that deviated from the group cluster
 centers by more than 2 standard deviations of the cluster's mean variance.\\
-\begin{figure}
+\begin{wrapfigure}{r}{0.65\textwidth}
 $$
 Centroid(Grade_X)= \left[              \underset{x\in X}     \sum{  { {x_1}    \over {| X |} } }   ,   
  \underset{x\in X}     \sum{  { {x_2}    \over {| X |} } },
@@ -110,27 +128,28 @@ Centroid(Grade_X)= \left[              \underset{x\in X}     \sum{  { {x_1}    \
  \underset{x\in X}     \sum{  { {x_{| gene signature |}}    \over {| X |} } }                 \right] 
 $$
 \caption{Grade Gene Expression Centroid Generation}\label{centroid}
-\end{figure}
+\end{wrapfigure}
 For visual assessment of our analysis, we queried the grade 2 tumors against the grade 1 and 3 differentially expressed genes. The resulting chart
 shows a distinct clustering between the grade 1-like and grade 3-like tumors that follow approximately 
 the grade 3 and grade 1 distributions. Assuming the dataset comprises the actual distribution 
 of grade 1 to grade 3 tumors, approximately 55:64 for grade 1 and grade 3 respectively (figure \ref{grade2up}) we reassert our hypothesis
 of the lack of a grade 2 class distinction.
-\begin{figure}
+\begin{wrapfigure}{r}{0.63\textwidth}
+%\begin{figure}
 \centering
-\includegraphics[scale=0.50]{docs/grade2onupregulated3}
+\includegraphics[scale=0.40]{docs/grade2onupregulated3}
 \caption{Grade 2 Differentially Expressed Genes from Grade 1 and Grade 3}\label{grade2up}
-\end{figure}
-
+%\end{figure}
+\end{wrapfigure}
 Classification of grade 2 tumors was then computed by nearest centroid under the euclidean norm following the method in figure \ref{classify}.
-The new classifications were then used to recompute the KM-Survival analysis on tumor grades 2A (or grade 1-like) and 2b (or grade 3-like).
-
-\begin{figure}
+Other distance kernels could easily be substituted in place of euclidean, however in this analysis we assumed expression levels were orthogonal
+and linear. The new classifications were then used to recompute the KM-Survival analysis on tumor grades 2A (or grade 1-like) and 2b (or grade 3-like).
+\begin{wrapfigure}{r}{0.5\textwidth}
  $$
 Grade(X) = \underset{C \in Centroids} {\mathrm{argmin}} ~ \left( \sqrt{\sum_{g\in genelist}{ (X_{g} - C_{g})^2}}\right)
 $$
 \caption{Nearest Centroid Classification}\label{classify}
-\end{figure}
+\end{wrapfigure}
 
 \subsection{Other Unsupervised Learning Methods}
 In addition to the use of genomics portals to identify differentially expressed genes, two common unsupervised machine learning techniques were
@@ -139,15 +158,39 @@ of K-Means here as it is a long known method with many descriptions and analysis
 that attempts to minimize the inter-cluster distance on a set of N points and K cluster assignments. The method is greedy and iterative, with few guarantees
 on optimality, however combined with random starts, the overall performance of K-Means is actually quite good for spherical clusters\cite{kmeans}. 
 For our testing, following our aforementioned hypothesis of the existence of only two genetically identifiable tumor grades (low and high), we performed
-100 tests using K-Means on 50:50 training:test data comprising grade 1 and grade 3 tumors. The reclassification accuracy results are given \ref{KMResults}
-\begin{itemize}\label{KMResults}
-\item Mean 0.8382
-\item Mode 0.84
-\item Min 0.58
-\item Max 0.94
-\item Var 0.00315
-\end{itemize}
-From the results
+100 tests using K-Means on 50:50 training:test data comprising grade 1 and grade 3 tumors. The reclassification accuracy results are given below.\\
+%\begin{wrapfigure}{r}{0.2\textwidth}
+\begin{center}
+\begin{tabular}{| l | c | }
+    \hline
+    Mean & 0.8382  \\ \hline
+    Mode & 0.84 \\ \hline
+    Min & 0.58  \\ \hline
+    Max & 0.94  \\ \hline
+     Var &  0.00315  \\ \hline
+  \end{tabular}
+\end{center}
+%\end{wrapfigure}
+From the results it is clear there is significant error in the upper and lower bounds for accuracy. This though partially due to the K-Means algorithm
+itself, may have resulted from a badly conditioned training and test dataset split. As 50\% grade 1 and 50\% grade 3 would suggest the optimal split,
+we assert that the actual min accuracy performance is slightly lower than the real performance of K-Means, while the max is no better than could
+ideally be achieved from random 50:50 splitting.\\
+\\
+The second unsupervised method, Projection to Latent Structures Regression (or Partial Least Squares Regression, \emph{PLSR})\cite{Wold1} proved to 
+be slightly less accurate in its ability to correctly classify data. Despite its accuracy performance shortcomings, it did however
+perform well in its ability to identify highly differentially expressed genes. The explanation of these results is likely due to PLSR's maximization of the covariance
+between input data and a set of continuous output training vectors. Though the histological grade is a well ordered set, it is not continuous, and therefor fails to
+exploit some of the benefits of a covariance maximization algorithm. The top grade to expression covariance genes (loading vectors of PLSR) are listed below:
+\begin{center}
+\begin{tabular}{| l | l | l |}
+\hline
+CALML5 & 51806 & calmodulin-like 5\\ \hline
+PBK & 55872 & PDZ binding kinase\\ \hline
+RRM2 & 6241 & ribonucleotide reductase M2\\ \hline
+NEK2 & 4751 & NIMA (never in mitosis gene a)-related kinase\\ \hline
+CCNE2 & 9134 & cyclin E2 \\ \hline
+ \end{tabular}
+\end{center}
 
 %Computed centroids for grades 1 and 3 based on the 49 up-regulated genes identified with genomic portals.\cite{Treeview},\cite{CLEAN}
 
@@ -165,7 +208,7 @@ From the results
 
 \section{Results and Discussion}
 \section{Conclusion}
-90\% of the time it works all the time!
+90\% of the time it works all the time!\\
 \bibliography{refs}
 \bibliographystyle{ieeetr} \markright{ }
 

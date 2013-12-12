@@ -136,7 +136,13 @@ def readCDTFile(filename):
     raw = f.readline()[:-1].split("\t")
     
     #first 4 idx are labels
-    samples =[k for k in raw[4:]]
+    samples =[k[0] for k in raw[4:]]
+    for s in range(len(samples)):
+        t = [0,0,0]
+        ss = int(samples[s])-1
+        t[ss] = 1
+        samples[s] = [float(samples[s])-1]
+    
     #eweight garbage
     raw = f.readline()
     
@@ -157,28 +163,45 @@ def readCDTFile(filename):
 
 Y,genelist,X = readCDTFile("../train.cdt")
 #need to transpose for kmeans
-Y = array([[float(y[0]) for y in Y]]).T
+Y2,genelist2,X2 = readCDTFile("../test.cdt")
+Y.extend(Y2)
+print Y
+
+for x in range(len(X)):
+    X[x].extend(X2[x])
+
+#Y = array(Y).T
 X = array(X).T
 
-[trainX,trainY,testX,testY]=divide(X,Y,.999)
 
+print Y
+
+[trainX,trainY,testX,testY]=divide(X,Y,.50)
 
 #standard usage
 #P,Q,W,B = nipals(X,Y,15,10**-10)
 #test = X
 #Ypred = dot(dot(dot(test,W),B),Q.T)
 
-P,Q,W,B = nipals(trainX,trainY,50,10**-32)
+P,Q,W,B = nipals(trainX,trainY,10,10**-10)
 
 
-[trainX,trainY,testX,testY]=divide(X,Y,.001)
+[trainX,trainY,testX,testY]=divide(X,Y,.50)
 Ypred = dot(dot(dot(testX,W),B),Q.T)
 
-
 import pylab
-zippedYY = sorted([(testY[i][0],Ypred[i][0])  for i in xrange(len(testY)) ])
+sumofStructures = map(abs,map(sum,dot(W,B)))
+print var(sumofStructures)
+print average(sumofStructures)
+pylab.plot(sumofStructures)
 
-pylab.plot(zippedYY)
+#zippedYY = sorted([(testY[i][0],Ypred[i][0])  for i in xrange(len(testY)) ])
+#pylab.plot(zippedYY)
+#zippedYY = sorted([(testY[i][0],Ypred[i][1])  for i in xrange(len(testY)) ])
+#pylab.plot(zippedYY)
+#zippedYY = sorted([(testY[i][0],Ypred[i][2])  for i in xrange(len(testY)) ])
+#pylab.plot(zippedYY)
+
 
 pylab.show()
 
