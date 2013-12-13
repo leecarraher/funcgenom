@@ -20,6 +20,8 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amsthm}
+\usepackage{float}
+\usepackage[section]{placeins}
 %opening
 \title{Assessing Histological Grades of Primary Breast Cancer Using Gene Signatures}
 \author{Priyanka Arora, Lee Carraher,Ben Landis, Li Jing, Samuel Schmidt}
@@ -141,22 +143,6 @@ prognosis form grade 2 tumors with a poor (grade 3 like) prognosis and that biol
 associated with our gene signature will primarily consist of cell cycle regulation processes.  
 The study could improve our ability to predict breast cancer behavior , which is an essential step towards providing 
 individualized treatment  plan.\\
-\section{Discussion}
-Limitations to the study include pathologist variation and possible misclassification, region or 
-race specific differences since two populations are presented, and complications to analysis with ER status. \\
-
-In our study, we only used estrogen receptor positive tumors to look at the differentially 
-expressed genes. Thus the conclusions are limited to only the ER positive tumors and 
-inferences cannot be made as to ER negative tumors. Future work would include looking into the
- differentially expressed genes in both estrogen receptors positive and negative tumors and then
- compare the gene list between each other. This can shed light on which specific genes are dependent 
-on the ER status of tumors. \\
-
-In addition, looking at expression signatures based on AJCC staging classification systems 
-may decease some data set variation. The main criteria of the AJCC staging 
-systems include tumor size, lymph node status, and distant metastasis. Future studies should 
-also examine age of onset, races and geographic regions to look for variability and to improve 
-treatment for different groups.\\ 
 
 \section{Methods and Materials}
 \subsection{Data Acquisition and Sampling}
@@ -384,62 +370,58 @@ The graph is analogous to the Sotiriou analysis shown in Figure \ref{4S}-C.
 %\end{figure}
 \end{figure}
 
- %\begin{wrapfigure}{r}{1\textwidth}
-\begin{figure}
+%\begin{wrapfigure}{r}{.6\textwidth}
+\begin{figure}[t]
 \centering
-\includegraphics[scale=0.70]{docs/Figure4S}
+\includegraphics[scale=0.60]{docs/Figure4S}
 \caption{All samples reclassified using the nearest-centroid method.}\label{4S}
 \end{figure}
 %\end{wrapfigure}
-For a sort of control, we thought it might be interesting to run a similar 
+ \begin{wrapfigure}{c}{0.65\textwidth}
+%\begin{figure}
+\centering
+\includegraphics[scale=0.4]{docs/Figure5S}
+\caption{All samples reclassified using PAM50 genes.}\label{5S}
+\vspace{-50pt}
+%\end{figure}
+\end{wrapfigure}
+For a control, we thought it might be interesting to run a similar 
 analysis using the PAM50 geneset, a list of genes known to be differentially
  expressed across breast cancer tumor subtypes. The reclassification using 
 the PAM50 genes (and nearest-centroid) is shown in the KM curve in Figure \ref{5S}.
- \begin{wrapfigure}{r}{0.60\textwidth}
-%\begin{figure}
-\centering
-\includegraphics[scale=0.505]{docs/Figure5S}
-\caption{All samples reclassified using PAM50 genes.}\label{5S}
-%\end{figure}
-\end{wrapfigure}
+
 
 \subsection{Results}
-Baseline KM curves
-Based on the study’s data without any reclassification, KM survival analyses with outcome 
+ \begin{wrapfigure}{h}{0.60\textwidth}
+%\begin{figure}
+\centering
+\vspace{-30pt}
+\includegraphics[scale=0.45]{docs/Figure5S}
+\caption{ KM curve of relapse free survival over time in ER positive versus ER negative samples.}\label{1B}
+\vspace{-10pt}
+%\end{figure}
+\end{wrapfigure}
+Baseline KM curves Based on the study’s data without any reclassification, KM survival analyses with outcome 
 defined as relapse free survival were performed for samples in the KJ125 set.   KM analysis 
 was performed for ER positive samples versus ER negative samples in the cohort (Figure \ref{1B}). 
 The ER negative samples tended to have worse prognosis than ER positive samples although 
 the difference did not reach statistical significance. This trend is consistent with literature 
-evidence that ER negative tumors are more malignant.  
+evidence that ER negative tumors are more malignant.  \\
 
- \begin{wrapfigure}{r}{0.70\textwidth}
-%\begin{figure}
-\centering
-\includegraphics[scale=0.70]{docs/Figure5S}
-\caption{ KM curve of relapse free survival over time in ER positive versus ER negative samples.}\label{1B}
-%\end{figure}
-\end{wrapfigure}
 A KM curve was next generated for histologic grade among samples in the KJ125 cohort.  
 Histologic grades 2 and 3 were associated with worse prognosis with regard to relapse 
 free survival than grade 1 (Figure \ref{2B}).  Interestingly, there was no observed difference 
-between grade 2 and 3 tumors.  
-
- \begin{wrapfigure}{r}{0.6\textwidth}
-%\begin{figure}
-\centering
-\includegraphics[scale=0.51]{docs/Figure2B}
-\caption{ KM curve of relapse free survival over time in groups based on histologic grades.}\label{2B}
-%\end{figure}
-\end{wrapfigure}
+between grade 2 and 3 tumors.  \\
 
 Unsupervised clustering between grade 1 and grade 3 tumors within only the 
 KJX64 set was performed, which identified a list of 30 probe sets comprising 
 29 genes that are differentially expressed between grade 1 and grade 3 tumors 
 (Table \ref{T1}).  Specifically, these genes were upregulated in histologic grade 3 tumors 
-and downregulated in histologic grade 1 tumors.  
+and downregulated in histologic grade 1 tumors.  \\
 
 
-\begin{figure}
+
+\begin{table}
 \begin{tabular}{| l | l | l | l | }
     \hline
 202095\_s\_at & BIRC5 & 332 & baculoviral IAP repeat-containing 5\\ \hline 
@@ -475,7 +457,7 @@ and downregulated in histologic grade 1 tumors.
 \end{tabular}
 \caption{List of 30 probe sets comprising 29 genes which are upregulated in KJX64 histologic 
 grade 3 samples and downregulated in grade 1 samples.}\label{T1}
-\end{figure}
+\end{table}
 
 
 The centroid-based approach utilizing calculated Euclidean distances was applied to the 
@@ -484,29 +466,26 @@ centroid-based reclassification of all KJ125 samples. This includes histologic g
 and those with histologic grade not available.  Grade 1-like tumor samples were associated 
 with significantly lower risk of disease relapse.  Figure \ref{4B} depicts the KM analysis for 
 centroid-based reclassification of only grade 2 tumor samples in the KJ125 set and 
-also demonstrates better prognosis for those samples reclassified as grade 1-like.  
-
- \begin{wrapfigure}{r}{1.\textwidth}
+also demonstrates better prognosis for those samples reclassified as grade 1-like. 
+\begin{wrapfigure}{r}{0.5\textwidth}
 %\begin{figure}
+\vspace{10pt}
 \centering
-\includegraphics[scale=0.38]{docs/Figure3B}
+\includegraphics[scale=0.45]{docs/Figure2B}
+\caption{ KM curve of relapse free survival over time in groups based on histologic grades.}\label{2B}
+%\end{figure}
+\end{wrapfigure}
+
+
+ %\begin{wrapfigure}{r}{.6\textwidth}
+\begin{figure}[b!]
+\centering
+\includegraphics[scale=0.5]{docs/Figure3B}
 \caption{ KM analysis of relapse free survival among all 
 KJ125 tumors reclassified as 1-like or 3-like based on 
 microarray gene expression profiles.}\label{3B}
-%\end{figure}
-\end{wrapfigure}
-
-
- \begin{wrapfigure}{r}{0.64\textwidth}
-%\begin{figure}
-\centering
-\includegraphics[scale=0.40]{docs/Figure4B}
-\caption{ KM analysis of relapse free survival between 
-histologic grade 2 tumors in KJ125 set reclassified as 
-1-like or 3-like based on gene expression profiles.}\label{4B}
-%\end{figure}
-\end{wrapfigure}
-
+\end{figure}
+%\end{wrapfigure}
 Next, the list of the 29 differentially expressed genes in the above table was queried against 
 the RNAseq gene expression data from by PAM50 subtype in TCGA \cite{Nature1}.  
 The clustering is demonstrated in Figure \ref{5B}.  There is a cluster of 108 samples with 
@@ -519,6 +498,15 @@ analysis were found in this cluster. Furthermore, there were only 3 luminal A su
  tumors are less aggressive than basal-like tumors and serves as a validation of our 
 generated gene list. The TCGA paper does not provide survival data, which would 
 be another interesting validation to be explored in the future.\\
+% \begin{wrapfigure}{r}{0.64\textwidth}
+\begin{figure}
+\centering
+\includegraphics[scale=0.60]{docs/Figure4B}
+\caption{ KM analysis of relapse free survival between 
+histologic grade 2 tumors in KJ125 set reclassified as 
+1-like or 3-like based on gene expression profiles.}\label{4B}
+\end{figure}
+%\end{wrapfigure}
 
  \begin{wrapfigure}{r}{1.\textwidth}
 %\begin{figure}
@@ -561,14 +549,14 @@ be associated with oncologic processes in multiple other organs according to
 queries of the GeneCards web tool (www.genecards.org).  
 
 
- \begin{wrapfigure}{r}{1.\textwidth}
-%\begin{figure}
+ %\begin{wrapfigure}{r}{.7\textwidth}
+\begin{figure}
 \centering
-\includegraphics[scale=0.70]{docs/Figure6B}
+\includegraphics[scale=0.65]{docs/Figure6B}
 \caption{List of differentially upregulated genes in histologic 
 grade 3 tumors is enriched for the pathway of cell cycle regulation.}\label{6B}
-%\end{figure}
-\end{wrapfigure}
+\end{figure}
+%\end{wrapfigure}
 
 
  \begin{wrapfigure}{r}{1.\textwidth}
@@ -591,7 +579,7 @@ degradation.}\label{8B}
 %\end{figure}
 \end{wrapfigure}
 
-\begin{figure}
+\begin{table}
 \begin{tabular}{| l | l | l | l | }
     \hline
 \textbf{Gene} & \textbf{Protein} & \textbf{Function} & \textbf{Associated diseases}\\ \hline 
@@ -623,7 +611,7 @@ BIRC5 & baculoviral IAP repeat- &  Inhibits apoptosis and promotes & Cervical ca
 Grade 3 tumors in our analyses as well as the analyses by Sotiriou.  
 These genes are recognized to be associated with other oncologic 
 processes and systemic disorders associated with cancer risk.}\label{T3}
-\end{figure}
+\end{table}
 
 
 \subsection{Discussion}
@@ -638,8 +626,25 @@ identical graph. This was unexpected, as PAM50 genes are known to
 separate samples based on their subtype rather than their grade. However, 
 it is notable to mention that grade 1 and 3 tumors are more likely to be Basal 
 and Luminal tumors, respectively. This explains the similarity between our 
-and the PAM50 results.
-\subsection{Caveats}
+and the PAM50 results.\\
+
+Limitations to the study include pathologist variation and possible misclassification, region or 
+race specific differences since two populations are presented, and complications to analysis with ER status. \\
+
+In our study, we only used estrogen receptor positive tumors to look at the differentially 
+expressed genes. Thus the conclusions are limited to only the ER positive tumors and 
+inferences cannot be made as to ER negative tumors. Future work would include looking into the
+ differentially expressed genes in both estrogen receptors positive and negative tumors and then
+ compare the gene list between each other. This can shed light on which specific genes are dependent 
+on the ER status of tumors. \\
+
+In addition, looking at expression signatures based on AJCC staging classification systems 
+may decease some data set variation. The main criteria of the AJCC staging 
+systems include tumor size, lymph node status, and distant metastasis. Future studies should 
+also examine age of onset, races and geographic regions to look for variability and to improve 
+treatment for different groups.\\ 
+
+\subsubsection{Caveats}
 While we were able to analyze the given dataset in an unbiased manner, 
 there was no way for us to control the data given to us. In that vein, we 
 were unable to control the research population for tumor size, age, 
@@ -650,7 +655,8 @@ based on what treatments were being offered to each patient. The
 possibility that different patients were participating in different treatments 
 throughout their lives is enough to alter the confidence intervals on our KM 
 curves.
-\subsection{Future Work}
+
+\subsubsection{Future Work}
 Our work with the Sotirou paper was only able to reproduce their analysis 
 and improve upon it slightly. There is still a large amount of work that could 
 be done to further validate our methods, as well as to delve deeper in to the 

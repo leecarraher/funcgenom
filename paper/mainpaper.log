@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.13)  13 DEC 2013 15:01
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.13)  13 DEC 2013 17:19
 entering extended mode
  %&-line parsing enabled.
 **mainpaper.tex
@@ -497,402 +497,536 @@ Package: caption 2009/10/09 v3.1k Customizing captions (AR)
 \c@ContinuedFloat=\count108
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
+)
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count109
+\float@exts=\toks30
+\float@box=\box29
+\@float@everytoks=\toks31
+\@floatcapt=\box30
+)
+(/usr/share/texmf-texlive/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
 ) (./mainpaper.aux)
 \openout1 = `mainpaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
+\scratchcounter=\count110
 \scratchdimen=\dimen125
-\scratchbox=\box29
-\nofMPsegments=\count110
-\nofMParguments=\count111
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count112
+\scratchbox=\box31
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count113
 \MPscratchDim=\dimen126
-\MPnumerator=\count113
-\everyMPtoPDFconversion=\toks31
+\MPnumerator=\count114
+\everyMPtoPDFconversion=\toks33
 )
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 28.
  (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count114
+\c@section@level=\count115
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
  (./mainpaper.out)
 (./mainpaper.out)
 \@outlinefile=\write3
 \openout3 = `mainpaper.out'.
 
-\AtBeginShipoutBox=\box30
+\AtBeginShipoutBox=\box32
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 31.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 31.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 45--54
+Underfull \hbox (badness 10000) in paragraph at lines 47--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--63
+Underfull \hbox (badness 10000) in paragraph at lines 57--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--71
+Underfull \hbox (badness 10000) in paragraph at lines 66--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--87
+Underfull \hbox (badness 10000) in paragraph at lines 74--89
 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 88--100
+Underfull \hbox (badness 10000) in paragraph at lines 90--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--127
+Underfull \hbox (badness 10000) in paragraph at lines 120--129
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 139--144
+Underfull \hbox (badness 10000) in paragraph at lines 141--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--147
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--154
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--169
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 170.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 156.
 
 (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 170.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 156.
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--198
+Underfull \hbox (badness 10000) in paragraph at lines 163--175
 
  []
 
-[3]
-<docs/grade1and3differentiallyexpressed.pdf, id=128, 794.97pt x 897.3525pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--184
+
+ []
+
+<docs/grade1and3differentiallyexpressed.pdf, id=112, 794.97pt x 897.3525pt>
 File: docs/grade1and3differentiallyexpressed.pdf Graphic file (type pdf)
 
 <use docs/grade1and3differentiallyexpressed.pdf>
-Overfull \hbox (56.45847pt too wide) in paragraph at lines 214--215
+Overfull \hbox (56.45847pt too wide) in paragraph at lines 200--201
  [][] 
  []
 
-
-Underfull \hbox (badness 2142) in paragraph at lines 218--235
+[3]
+Underfull \hbox (badness 2142) in paragraph at lines 204--221
 \OT1/cmr/m/n/10 The gene sig-na-ture iden-ti-fi-ca-tion
  []
 
 
-Underfull \hbox (badness 4378) in paragraph at lines 218--235
+Underfull \hbox (badness 4378) in paragraph at lines 204--221
 \OT1/cmr/m/n/10 Sotiriou breast can-cer data set
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 218--235
+Underfull \hbox (badness 1371) in paragraph at lines 204--221
 \OT1/cmr/m/n/10 with Ge-nomics Por-tals (ge-nomic-
  []
 
-[4 <./docs/grade1and3differentiallyexpressed.pdf>]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 245.
+(amsmath)                 on input line 231.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--256
+[4 <./docs/grade1and3differentiallyexpressed.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 238--242
 
  []
 
-<docs/grade2onupregulated3.pdf, id=146, 794.97pt x 819.06pt>
+<docs/grade2onupregulated3.pdf, id=142, 794.97pt x 819.06pt>
 File: docs/grade2onupregulated3.pdf Graphic file (type pdf)
 
 <use docs/grade2onupregulated3.pdf>
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
-273.
+259.
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 270--278
+Underfull \hbox (badness 1755) in paragraph at lines 256--264
 []\OT1/cmr/m/n/10 Classification of grade 2 tu-mors
  []
 
 
-Underfull \hbox (badness 4582) in paragraph at lines 270--278
+Underfull \hbox (badness 4582) in paragraph at lines 256--264
 \OT1/cmr/m/n/10 anal-y-sis on tu-mor grades 2A (or
  []
 
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 27
-8.
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 26
+4.
 
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 28
-0.
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 26
+6.
 
 
-Underfull \hbox (badness 1817) in paragraph at lines 280--280
+Underfull \hbox (badness 1817) in paragraph at lines 266--266
 []\OT1/cmr/bx/n/12 Unsupervised Ma-chine
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--275
+
+ []
+
 [5 <./docs/grade2onupregulated3.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 281--289
+Underfull \hbox (badness 10000) in paragraph at lines 287--291
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--305
-
- []
-
-<docs/Figure1S.png, id=170, 1207.51125pt x 348.30125pt>
+<docs/Figure1S.png, id=167, 1207.51125pt x 348.30125pt>
 File: docs/Figure1S.png Graphic file (type png)
 
 <use docs/Figure1S.png>
-Underfull \hbox (badness 10000) in paragraph at lines 338--354
+Underfull \hbox (badness 10000) in paragraph at lines 324--340
 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 360--368
+[6 <./docs/Figure1S.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 346--354
 
  []
 
-<docs/Figure3S.png, id=186, 614.295pt x 406.51875pt>
+<docs/Figure3S.png, id=182, 614.295pt x 406.51875pt>
 File: docs/Figure3S.png Graphic file (type png)
  <use docs/Figure3S.png>
-<docs/Figure4S.png, id=187, 611.28375pt x 399.4925pt>
+<docs/Figure4S.png, id=183, 611.28375pt x 399.4925pt>
 File: docs/Figure4S.png Graphic file (type png)
  <use docs/Figure4S.png>
-<docs/Figure5S.png, id=189, 663.47874pt x 413.545pt>
+<docs/Figure5S.png, id=184, 663.47874pt x 413.545pt>
 File: docs/Figure5S.png Graphic file (type png)
  <use docs/Figure5S.png>
-Overfull \hbox (63.27568pt too wide) in paragraph at lines 401--402
- [][] 
- []
-
-[7 <./docs/Figure1S.png (PNG copy)> <./docs/Figure3S.png (PNG copy)>]
-Underfull \hbox (badness 2318) in paragraph at lines 407--414
-\OT1/cmr/m/n/10 Baseline KM curves Based on the
+Underfull \hbox (badness 1681) in paragraph at lines 388--392
+\OT1/cmr/m/n/10 i-lar anal-y-sis us-ing the PAM50
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 407--414
-\OT1/cmr/m/n/10 were per-formed for sam-ples in the
+Underfull \hbox (badness 3492) in paragraph at lines 388--392
+\OT1/cmr/m/n/10 breast can-cer tu-mor sub-types.
+ []
+
+
+Underfull \hbox (badness 7522) in paragraph at lines 388--392
+\OT1/cmr/m/n/10 The re-clas-si-fi-ca-tion us-ing the
+ []
+
+
+Overfull \hbox (7.87538pt too wide) in paragraph at lines 388--392
+\OT1/cmr/m/n/10 PAM50 genes (and nearest-centroid)
  []
 
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
-415.
+395.
 
 File: docs/Figure5S.png Graphic file (type png)
 <use docs/Figure5S.png>
-Overfull \hbox (147.3558pt too wide) in paragraph at lines 418--419
+Overfull \hbox (26.77917pt too wide) in paragraph at lines 399--400
  [][] 
  []
 
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 42
-2.
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 40
+4.
 
 
-Package wrapfig Warning: Collision between wrapping environments on input line 
-427.
+Underfull \hbox (badness 10000) in paragraph at lines 404--410
+
+ []
+
+[7 <./docs/Figure3S.png (PNG copy)> <./docs/Figure5S.png (PNG copy)>]
+Underfull \hbox (badness 4647) in paragraph at lines 411--415
+[][]\OT1/cmr/m/n/10 A KM curve was next gen-er-
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 411--415
+\OT1/cmr/m/n/10 ples in the KJ125 co-hort. His-to-
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 411--415
+\OT1/cmr/m/n/10 logic grades 2 and 3 were as-so-ci-
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 411--415
+\OT1/cmr/m/n/10 ated with worse prog-no-sis with re-
+ []
+
+
+Underfull \hbox (badness 3118) in paragraph at lines 411--415
+\OT1/cmr/m/n/10 gard to re-lapse free sur-vival than
+ []
+
+
+Underfull \hbox (badness 7558) in paragraph at lines 411--415
+\OT1/cmr/m/n/10 grade 1 (Fig-ure []10[]). In-ter-est-
+ []
+
+
+Underfull \hbox (badness 4001) in paragraph at lines 411--415
+\OT1/cmr/m/n/10 ence be-tween grade 2 and 3 tu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--415
+
+ []
+
+
+Underfull \hbox (badness 6173) in paragraph at lines 416--421
+[]\OT1/cmr/m/n/10 Unsupervised clus-ter-ing be-tween
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--421
+
+ []
+
+
+Overfull \hbox (28.80252pt too wide) in paragraph at lines 425--459
+[][] 
+ []
 
 <docs/Figure2B.png, id=200, 553.31718pt x 464.4853pt>
 File: docs/Figure2B.png Graphic file (type png)
  <use docs/Figure2B.png>
-Overfull \hbox (10.40453pt too wide) in paragraph at lines 430--431
+Overfull \hbox (22.50648pt too wide) in paragraph at lines 474--475
  [][] 
  []
 
-[8 <./docs/Figure4S.png (PNG copy)> <./docs/Figure5S.png (PNG copy)>]
-Underfull \hbox (badness 6173) in paragraph at lines 435--440
-[][]\OT1/cmr/m/n/10 Unsupervised clus-ter-ing be-tween
- []
-
-
-Overfull \hbox (28.80252pt too wide) in paragraph at lines 443--477
-[][] 
- []
-
-<docs/Figure3B.png, id=211, 807.7678pt x 696.35156pt>
+[8 <./docs/Figure4S.png (PNG copy)>] [9]
+<docs/Figure3B.png, id=214, 807.7678pt x 696.35156pt>
 File: docs/Figure3B.png Graphic file (type png)
  <use docs/Figure3B.png>
-
-Package wrapfig Warning: Collision between wrapping environments on input line 
-500.
-
-<docs/Figure4B.png, id=212, 679.03688pt x 620.3175pt>
+<docs/Figure4B.png, id=218, 679.03688pt x 620.3175pt>
 File: docs/Figure4B.png Graphic file (type png)
  <use docs/Figure4B.png>
-[9 <./docs/Figure2B.png (PNG copy)>] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 510--522
-
- []
-
-<docs/Figure5B.png, id=227, 432.11438pt x 414.79968pt>
+[10 <./docs/Figure2B.png (PNG copy)> <./docs/Figure3B.png (PNG copy)>]
+<docs/Figure5B.png, id=225, 432.11438pt x 414.79968pt>
 File: docs/Figure5B.png Graphic file (type png)
  <use docs/Figure5B.png>
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
-534.
+522.
 
 
-Overfull \hbox (5.28189pt too wide) in paragraph at lines 535--549
+Overfull \hbox (5.28189pt too wide) in paragraph at lines 523--537
 [][] 
  []
 
-[11 <./docs/Figure3B.png (PNG copy)> <./docs/Figure4B.png (PNG copy)>]
-Underfull \hbox (badness 4981) in paragraph at lines 552--562
+[11 <./docs/Figure4B.png (PNG copy)>]
+Underfull \hbox (badness 4981) in paragraph at lines 540--550
 \OT1/cmr/m/n/10 uti-liz-ing re-source tools \OT1/cmr/m/it/10 DAVID
  []
 
 
-Underfull \hbox (badness 2529) in paragraph at lines 552--562
+Underfull \hbox (badness 2529) in paragraph at lines 540--550
 \OT1/cmr/m/n/10 and \OT1/cmr/m/it/10 KEGG \OT1/cmr/m/n/10 [[]22[]] [[]23[]] [[]
 24[]] [[]25[]].
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 552--562
+Underfull \hbox (badness 2495) in paragraph at lines 540--550
 \OT1/cmr/m/n/10 3 path-ways: cell cy-cle reg-u-la-
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 552--562
+Underfull \hbox (badness 4391) in paragraph at lines 540--550
 \OT1/cmr/m/n/10 meio-sis, and ubiquitin-mediated
  []
 
-<docs/Figure6B.png, id=242, 679.03688pt x 496.10344pt>
+<docs/Figure6B.png, id=238, 679.03688pt x 496.10344pt>
 File: docs/Figure6B.png Graphic file (type png)
  <use docs/Figure6B.png>
-Overfull \hbox (22.35468pt too wide) in paragraph at lines 567--569
- [][] 
- []
-
-
-Package wrapfig Warning: Collision between wrapping environments on input line 
-574.
-
-<docs/Figure7B.png, id=243, 835.62187pt x 590.205pt>
+<docs/Figure7B.png, id=239, 835.62187pt x 590.205pt>
 File: docs/Figure7B.png Graphic file (type png)
  <use docs/Figure7B.png>
-[12 <./docs/Figure5B.png (PNG copy)>]
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
-584.
+572.
 
-<docs/Figure8B.png, id=257, 639.89063pt x 655.69969pt>
+<docs/Figure8B.png, id=240, 639.89063pt x 655.69969pt>
 File: docs/Figure8B.png Graphic file (type png)
  <use docs/Figure8B.png>
-[13 <./docs/Figure6B.png (PNG copy)>]
+[12 <./docs/Figure5B.png (PNG copy)>] [13 <./docs/Figure6B.png (PNG copy)>]
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 62
-9.
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 61
+7.
 
 [14 <./docs/Figure7B.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 643--647
+Underfull \hbox (badness 1755) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 were able to split grade 2 tu-
+ []
+
+
+Underfull \hbox (badness 5563) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 sets may be more help-ful in
+ []
+
+
+Underfull \hbox (badness 2608) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 tu-mor di-ag-no-sis and treat-ment,
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 as grade 2 di-ag-noses are cur-
+ []
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 ing" [[]13[]]. Our meth-ods were
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 slightly bet-ter than the Sotirou
+ []
+
+
+Underfull \hbox (badness 5578) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 pa-per at a sig-nif-i-cant p-value
+ []
+
+
+Underfull \hbox (badness 3780) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 (p=0.05). In ad-di-tion, us-ing
+ []
+
+
+Underfull \hbox (badness 5878) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 the PAM50 gene-set, we were
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 able to re-pro-duce these re-sults
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 and achieve an al-most iden-ti-cal
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 graph. This was un-ex-pected,
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 as PAM50 genes are known to
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 How-ever, it is no-table to men-
+ []
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 tion that grade 1 and 3 tu-
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 This ex-plains the sim-i-lar-ity be-
+ []
+
+
+Underfull \hbox (badness 1990) in paragraph at lines 618--630
+\OT1/cmr/m/n/10 tween our and the PAM50 re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 618--630
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 654--658
+Underfull \hbox (badness 10000) in paragraph at lines 631--633
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 659--663
+Underfull \hbox (badness 10000) in paragraph at lines 634--640
 
  []
 
-(./mainpaper.bbl [15 <./docs/Figure8B.png (PNG copy)>] [16]) [17]
-(./mainpaper.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--646
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 648--652
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 660--664
+
+ []
+
+[15 <./docs/Figure8B.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 665--669
+
+ []
+
+(./mainpaper.bbl [16]) [17] (./mainpaper.aux) ) 
 Here is how much of TeX's memory you used:
- 6593 strings out of 495061
- 94596 string characters out of 1182621
- 183801 words of memory out of 3000000
- 9556 multiletter control sequences out of 15000+50000
+ 6652 strings out of 495061
+ 95502 string characters out of 1182621
+ 184253 words of memory out of 3000000
+ 9608 multiletter control sequences out of 15000+50000
  12456 words of font info for 48 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,8n,36p,406b,404s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmb
-x10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
-sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/tex
-mf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
-share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-
-Output written on mainpaper.pdf (17 pages, 1558162 bytes).
+ 38i,8n,36p,403b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmr5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb>
+Output written on mainpaper.pdf (17 pages, 1558397 bytes).
 PDF statistics:
- 348 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 344 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 170 words of extra memory for PDF output out of 10000 (max. 10000000)
 
