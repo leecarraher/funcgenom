@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.13)  12 DEC 2013 18:01
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.13)  13 DEC 2013 15:01
 entering extended mode
  %&-line parsing enabled.
 **mainpaper.tex
@@ -630,7 +630,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--198
  []
 
 [3]
-<docs/grade1and3differentiallyexpressed.pdf, id=132, 794.97pt x 897.3525pt>
+<docs/grade1and3differentiallyexpressed.pdf, id=128, 794.97pt x 897.3525pt>
 File: docs/grade1and3differentiallyexpressed.pdf Graphic file (type pdf)
 
 <use docs/grade1and3differentiallyexpressed.pdf>
@@ -664,7 +664,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 252--256
 
  []
 
-<docs/grade2onupregulated3.pdf, id=150, 794.97pt x 819.06pt>
+<docs/grade2onupregulated3.pdf, id=146, 794.97pt x 819.06pt>
 File: docs/grade2onupregulated3.pdf Graphic file (type pdf)
 
 <use docs/grade2onupregulated3.pdf>
@@ -705,7 +705,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--305
 
  []
 
-<docs/Figure1S.png, id=174, 1207.51125pt x 348.30125pt>
+<docs/Figure1S.png, id=170, 1207.51125pt x 348.30125pt>
 File: docs/Figure1S.png Graphic file (type png)
 
 <use docs/Figure1S.png>
@@ -718,13 +718,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 360--368
 
  []
 
-<docs/Figure3S.png, id=190, 614.295pt x 406.51875pt>
+<docs/Figure3S.png, id=186, 614.295pt x 406.51875pt>
 File: docs/Figure3S.png Graphic file (type png)
  <use docs/Figure3S.png>
-<docs/Figure4S.png, id=191, 611.28375pt x 399.4925pt>
+<docs/Figure4S.png, id=187, 611.28375pt x 399.4925pt>
 File: docs/Figure4S.png Graphic file (type png)
  <use docs/Figure4S.png>
-<docs/Figure5S.png, id=193, 663.47874pt x 413.545pt>
+<docs/Figure5S.png, id=189, 663.47874pt x 413.545pt>
 File: docs/Figure5S.png Graphic file (type png)
  <use docs/Figure5S.png>
 Overfull \hbox (63.27568pt too wide) in paragraph at lines 401--402
@@ -759,7 +759,7 @@ Package wrapfig Warning: Stationary wrapfigure forced to float on input line 42
 Package wrapfig Warning: Collision between wrapping environments on input line 
 427.
 
-<docs/Figure2B.png, id=204, 553.31718pt x 464.4853pt>
+<docs/Figure2B.png, id=200, 553.31718pt x 464.4853pt>
 File: docs/Figure2B.png Graphic file (type png)
  <use docs/Figure2B.png>
 Overfull \hbox (10.40453pt too wide) in paragraph at lines 430--431
@@ -776,14 +776,14 @@ Overfull \hbox (28.80252pt too wide) in paragraph at lines 443--477
 [][] 
  []
 
-<docs/Figure3B.png, id=215, 807.7678pt x 696.35156pt>
+<docs/Figure3B.png, id=211, 807.7678pt x 696.35156pt>
 File: docs/Figure3B.png Graphic file (type png)
  <use docs/Figure3B.png>
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
 500.
 
-<docs/Figure4B.png, id=216, 679.03688pt x 620.3175pt>
+<docs/Figure4B.png, id=212, 679.03688pt x 620.3175pt>
 File: docs/Figure4B.png Graphic file (type png)
  <use docs/Figure4B.png>
 [9 <./docs/Figure2B.png (PNG copy)>] [10]
@@ -791,7 +791,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 510--522
 
  []
 
-<docs/Figure5B.png, id=231, 432.11438pt x 414.79968pt>
+<docs/Figure5B.png, id=227, 432.11438pt x 414.79968pt>
 File: docs/Figure5B.png Graphic file (type png)
  <use docs/Figure5B.png>
 
@@ -824,7 +824,7 @@ Underfull \hbox (badness 4391) in paragraph at lines 552--562
 \OT1/cmr/m/n/10 meio-sis, and ubiquitin-mediated
  []
 
-<docs/Figure6B.png, id=246, 679.03688pt x 496.10344pt>
+<docs/Figure6B.png, id=242, 679.03688pt x 496.10344pt>
 File: docs/Figure6B.png Graphic file (type png)
  <use docs/Figure6B.png>
 Overfull \hbox (22.35468pt too wide) in paragraph at lines 567--569
@@ -835,7 +835,7 @@ Overfull \hbox (22.35468pt too wide) in paragraph at lines 567--569
 Package wrapfig Warning: Collision between wrapping environments on input line 
 574.
 
-<docs/Figure7B.png, id=247, 835.62187pt x 590.205pt>
+<docs/Figure7B.png, id=243, 835.62187pt x 590.205pt>
 File: docs/Figure7B.png Graphic file (type png)
  <use docs/Figure7B.png>
 [12 <./docs/Figure5B.png (PNG copy)>]
@@ -843,40 +843,36 @@ File: docs/Figure7B.png Graphic file (type png)
 Package wrapfig Warning: Collision between wrapping environments on input line 
 584.
 
-<docs/Figure8B.png, id=261, 639.89063pt x 655.69969pt>
+<docs/Figure8B.png, id=257, 639.89063pt x 655.69969pt>
 File: docs/Figure8B.png Graphic file (type png)
  <use docs/Figure8B.png>
 [13 <./docs/Figure6B.png (PNG copy)>]
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 63
-0.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 63
-1.
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 62
+9.
 
 [14 <./docs/Figure7B.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 645--649
+Underfull \hbox (badness 10000) in paragraph at lines 643--647
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--660
+Underfull \hbox (badness 10000) in paragraph at lines 654--658
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 661--665
+Underfull \hbox (badness 10000) in paragraph at lines 659--663
 
  []
 
 (./mainpaper.bbl [15 <./docs/Figure8B.png (PNG copy)>] [16]) [17]
 (./mainpaper.aux) ) 
 Here is how much of TeX's memory you used:
- 6595 strings out of 495061
- 94626 string characters out of 1182621
+ 6593 strings out of 495061
+ 94596 string characters out of 1182621
  183801 words of memory out of 3000000
- 9557 multiletter control sequences out of 15000+50000
+ 9556 multiletter control sequences out of 15000+50000
  12456 words of font info for 48 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  38i,8n,36p,406b,404s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -894,9 +890,9 @@ type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
 /cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 
-Output written on mainpaper.pdf (17 pages, 1558527 bytes).
+Output written on mainpaper.pdf (17 pages, 1558162 bytes).
 PDF statistics:
- 352 PDF objects out of 1000 (max. 8388607)
- 84 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 348 PDF objects out of 1000 (max. 8388607)
+ 83 named destinations out of 1000 (max. 500000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 
