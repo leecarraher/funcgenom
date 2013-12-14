@@ -270,8 +270,9 @@ of K-Means here as it is a long known method with many descriptions and analysis
 that attempts to minimize the inter-cluster distance on a set of N points and K cluster assignments. The method is greedy and iterative, with few guarantees
 on optimality, however combined with random starts, the overall performance of K-Means is actually quite good for spherical clusters\cite{kmeans}. 
 For our testing, following our aforementioned hypothesis of the existence of only two genetically identifiable tumor grades (low and high), we performed
-100 tests using K-Means on 50:50 training:test data comprising grade 1 and grade 3 tumors. The reclassification accuracy results are given below.\\
+100 tests using K-Means on 50:50 training:test data comprising grade 1 and grade 3 tumors. The reclassification accuracy results are given in Table \ref{Tkm}.\\
 %\begin{wrapfigure}{r}{0.2\textwidth}
+\begin{table}
 \begin{center}
 \begin{tabular}{| l | c | }
     \hline
@@ -282,6 +283,8 @@ For our testing, following our aforementioned hypothesis of the existence of onl
      Var &  0.00315  \\ \hline
   \end{tabular}
 \end{center}
+\caption{Average performance of KMeans reclassification on 50:50 split}\label{Tkm}
+\end{table}
 %\end{wrapfigure}
 
 From the results it is clear there is significant error in the upper and lower bounds for accuracy. This though partially due to the K-Means algorithm
@@ -293,7 +296,8 @@ The second unsupervised method, Projection to Latent Structures Regression (or P
 be slightly less accurate in its ability to correctly classify data. Despite its accuracy performance shortcomings, it did however
 perform well in its ability to identify highly differentially expressed genes. The explanation of these results is likely due to PLSR's maximization of the covariance
 between input data and a set of continuous output training vectors. Though the histological grade is a well ordered set, it is not continuous, and therefor fails to
-exploit some of the benefits of a covariance maximization algorithm. The top grade to expression covariance genes (loading vectors of PLSR) are listed below:
+exploit some of the benefits of a covariance maximization algorithm. The top grade to expression covariance genes (loading vectors of PLSR) are listed in Table \ref{TPLSR}:
+\begin{table}
 \begin{center}
 \begin{tabular}{| l | l | l |}
 \hline
@@ -303,7 +307,8 @@ RRM2 & 6241 & ribonucleotide reductase M2\\ \hline
 NEK2 & 4751 & NIMA (never in mitosis gene a)-related kinase\\ \hline
 CCNE2 & 9134 & cyclin E2 \\ \hline
  \end{tabular}
-\end{center}
+\end{center}\caption{Genes More than 3 sigmas from PLSR mean loading vector magnitude}\label{TPLSR}
+\end{table}
 
 %Computed centroids for grades 1 and 3 based on the 49 up-regulated genes identified with genomic portals.\cite{Treeview},\cite{CLEAN}
 
@@ -319,20 +324,22 @@ CCNE2 & 9134 & cyclin E2 \\ \hline
 %* Interestingly, nearest centroid assignment was almost identical.
 %Up-regulated genes from grade 3 and 1 differential expression applied to grade 2 tumors (Figure \ref{grade2up})
 
+
 \section{Results and Discussion}
+\begin{figure}
+%\begin{figure}
+\centering
+\includegraphics[scale=0.38]{docs/Figure1S}
+\caption{Kaplan-Meier curves from Sotiriou, et al.}\label{1S}
+%\end{figure}
+\end{figure}
 
 In order to validate the aforementioned analysis, we created a set of Kaplan-Meier 
 (KM) survival curves. These curves show that our gene sets and classification 
 methods provide results that are at least as successful as those in the Sotiriou 
 paper at separating the grade 2 tumors into two disjoint sets. 
 For context, figure \ref{1S} shows three KM curves from the Sotiriou paper:
-\begin{figure}
-%\begin{figure}
-\centering
-\includegraphics[scale=0.35]{docs/Figure1S}
-\caption{Kaplan-Meier curves from Sotiriou, et al.}\label{1S}
-%\end{figure}
-\end{figure}
+
 Graph \ref{1S} shows the original data from their analysis. Grade 1, 2, and 3 tumor 
 curves clearly separate from each other, clearly creating 3 separate and distinct 
 classes. However, we would like to demonstrate that grade 2 tumors should 
@@ -340,10 +347,14 @@ actually be classified as either grade 1 or grade 3. \\
 
 This is analysis is begun in graph B, as Sotiriou et al. used something 
 they called the “Gene Expression Grade Index” (GGI) to reclassify 
-grade 2 tumors. This index is shown below:
+grade 2 tumors. This index is shown below Figure \ref{ggi} :\\
+
+\begin{figure}
 $$
 GGI = scale\left( \sum_{j\in G_3}{ x_j } - \sum_{j\in G_1}{ x_j } - offset  \right)
-$$
+$$\caption{Gene Expression Grade Index, a tumor reclassification formula}\label{ggi}
+\end{figure}
+
 Gene Expression Grade Index, a tumor reclassification formula
 If the value of this formula was negative for a grade 2 sample, 
 the sample would be reclassified as a grade 1 tumor, while a positive 
@@ -353,7 +364,15 @@ This was described above as the nearest-centroid method. We reclassified
 each grade 2 sample to either grade 1 or 3 to produce the graph in Figure \ref{3S}.\\
 
 
-
+ \begin{wrapfigure}{r}{0.5\textwidth}
+%\begin{figure}
+\vspace{-10pt}
+\centering
+\includegraphics[scale=0.35]{docs/Figure5S}
+\caption{All samples reclassified using PAM50 genes.}\label{5S}
+\vspace{-30pt}
+%\end{figure}
+\end{wrapfigure}
 Using Figure \ref{3S} we were able to see a difference between our re-graded curve 
 and the original. Our reclassification actually intensified the gap between the grade 1 and 3 curves.
 Figure \ref{4S} shows the integration of grade 2 reclassifications in Figure  \ref{3S} with 
@@ -361,8 +380,8 @@ the original grade 1 and 3 samples. That is, the curve labeled “grade 1” in
 Figure  \ref{4S} includes all of the original grade 1 samples and grade 2 samples 
 that were classified as “1-like”, while the grade 3 curve contains the original
  grade 3 samples and the grade 2 samples that were classified as “3-like”. 
-The graph is analogous to the Sotiriou analysis shown in Figure \ref{4S}-C.
-\begin{figure}
+The graph is analogous to the Sotiriou analysis shown in Figure \ref{4S}.
+\begin{figure}[b!]
 %\begin{figure}
 \centering
 \includegraphics[scale=.55]{docs/Figure3S}
@@ -371,27 +390,23 @@ The graph is analogous to the Sotiriou analysis shown in Figure \ref{4S}-C.
 \end{figure}
 
 %\begin{wrapfigure}{r}{.6\textwidth}
-\begin{figure}[t]
+\begin{figure}
 \centering
+\vspace{-10pt}
 \includegraphics[scale=0.60]{docs/Figure4S}
 \caption{All samples reclassified using the nearest-centroid method.}\label{4S}
+\vspace{-10pt}
 \end{figure}
 %\end{wrapfigure}
- \begin{wrapfigure}{c}{0.65\textwidth}
-%\begin{figure}
-\centering
-\includegraphics[scale=0.4]{docs/Figure5S}
-\caption{All samples reclassified using PAM50 genes.}\label{5S}
-\vspace{-50pt}
-%\end{figure}
-\end{wrapfigure}
+
+
 For a control, we thought it might be interesting to run a similar 
 analysis using the PAM50 geneset, a list of genes known to be differentially
  expressed across breast cancer tumor subtypes. The reclassification using 
 the PAM50 genes (and nearest-centroid) is shown in the KM curve in Figure \ref{5S}.
 
-
 \subsection{Results}
+
  \begin{wrapfigure}{h}{0.60\textwidth}
 %\begin{figure}
 \centering
@@ -455,8 +470,10 @@ and downregulated in histologic grade 1 tumors.  \\
 218039\_at & NUSAP1 & 51203 & nucleolar and spindle associated protein 1\\ \hline 
 218883\_s\_at & MLF1IP & 79682 & MLF1 interacting protein\\ \hline
 \end{tabular}
+
 \caption{List of 30 probe sets comprising 29 genes which are upregulated in KJX64 histologic 
 grade 3 samples and downregulated in grade 1 samples.}\label{T1}
+
 \end{table}
 
 
@@ -469,7 +486,7 @@ centroid-based reclassification of only grade 2 tumor samples in the KJ125 set a
 also demonstrates better prognosis for those samples reclassified as grade 1-like. 
 \begin{wrapfigure}{r}{0.5\textwidth}
 %\begin{figure}
-\vspace{10pt}
+%\vspace{10pt}
 \centering
 \includegraphics[scale=0.45]{docs/Figure2B}
 \caption{ KM curve of relapse free survival over time in groups based on histologic grades.}\label{2B}
@@ -480,7 +497,7 @@ also demonstrates better prognosis for those samples reclassified as grade 1-lik
  %\begin{wrapfigure}{r}{.6\textwidth}
 \begin{figure}[b!]
 \centering
-\includegraphics[scale=0.5]{docs/Figure3B}
+\includegraphics[scale=0.4]{docs/Figure3B}
 \caption{ KM analysis of relapse free survival among all 
 KJ125 tumors reclassified as 1-like or 3-like based on 
 microarray gene expression profiles.}\label{3B}
